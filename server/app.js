@@ -1,4 +1,5 @@
 require('dotenv').config();
+const auth = require('./routes/auth');
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -7,6 +8,8 @@ const app = express();
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+app.use('/auth', auth);
 
 //Connecting to backend
 
