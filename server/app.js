@@ -3,12 +3,13 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 8000
 const cors = require('cors')
-const bodyParser = require('body-parser');
-const Signin = require('./Models/Signin');
+
+const Signin = require('./models/Signin');
 
 
 app.use(cors())//connects to front end
-app.use(bodyParser.json())//reads data in post
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json())//reads data in post
 
 
 //Connecting to backend
@@ -18,30 +19,29 @@ mongoose
     .catch(err => console.error(err))
 
 
+    app.use(
+      cors({
+        credentials: true,
+        origin: ['http://localhost:3000'], //Swap this with the client url
+      })
+    );
+    
+    
+    // app.use(express.static(path.join(__dirname, '../frontend/build')));
+    
+    // app.use('/api', require('./routes'));
 
+    
+    // app.get('*', (req, res, next) => {
+    //   res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
+    // });
+    
+    app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
+    
 
-
-//Listening to client here
-app.get('/', (req, res, next) => res.send('<h1>Press to the X</h1>'));
-//Posting from client
-app.post('/login',  (req, res) => {
-    console.log(req.body, '<----')
-
-    //Save info to DB
-   Signin.create(req.body)
-})
-
-
-app.get('/account', async (req, res) =>{
-  let inputFromDb =  await Account.find({})
-    res.send({inputFromDb})
-})
 
 
 
 //Server Started
 // app.listen(8000, () => console.log('yo yo yo im on 8000'));
 // app.use(express.static('client'))
-
-
-app.listen(PORT)
