@@ -5,7 +5,12 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    credentials: true,
+    origin: ['http://localhost:3000'],
+  })
+);
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
@@ -16,7 +21,7 @@ app.use('/auth', auth);
 async function connect() {
   try {
     mongoose.Promise = global.Promise;
-    await mongoose.connect(process.env.ATLAS_URL, {
+    await mongoose.connect('mongodb://localhost/ESG-NRG', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
@@ -25,7 +30,7 @@ async function connect() {
     console.log('Mongoose error', err);
   }
   app.listen(process.env.PORT);
-  console.log('API listening on localhost:3001');
+  console.log(`Listening on:${process.env.PORT}`);
 }
 
 connect();

@@ -1,12 +1,11 @@
 const router = require('express').Router();
 const User = require('../models/User');
 
-const { createToken, hashPassword, verifyPassword } = require('./util');
+const { createToken, hashPassword, verifyPassword } = require('../util');
 
 router.post('/login', async (req, res) => {
   try {
     const { email, password } = req.body;
-
     const user = await User.findOne({
       email,
     }).lean();
@@ -24,15 +23,10 @@ router.post('/login', async (req, res) => {
       const userInfo = Object.assign({}, { ...rest });
 
       const token = createToken(userInfo);
-
-      const decodedToken = jwtDecode(token);
-      const expiresAt = decodedToken.exp;
-
       res.json({
         message: 'Login successful!',
         token,
         userInfo,
-        expiresAt,
       });
     } else {
       res.status(403).json({
@@ -45,9 +39,17 @@ router.post('/login', async (req, res) => {
   }
 });
 
-app.post('/signup', async (req, res) => {
+router.post('/signup', async (req, res) => {
   try {
     const { email } = req.body;
+
+    const existingEmail = await User.findOne({
+      email,
+    }).lean();
+
+    if (existingEmail) {
+      return res.status(400).json({ message: 'Email already exists' });
+    }
 
     const hashedPassword = await hashPassword(req.body.password);
 
@@ -56,31 +58,16 @@ app.post('/signup', async (req, res) => {
       password: hashedPassword,
     };
 
-    const existingEmail = await User.findOne({
-      email: userData.email,
-    }).lean();
-
-    if (existingEmail) {
-      return res.status(400).json({ message: 'Email already exists' });
-    }
-
     const newUser = new User(userData);
     const savedUser = await newUser.save();
 
     if (savedUser) {
       const token = createToken(savedUser);
-      const decodedToken = jwtDecode(token);
-      const expiresAt = decodedToken.exp;
-
-      const { email } = savedUser;
-
-      const userInfo = { email };
 
       return res.json({
         message: 'User created!',
         token,
-        userInfo,
-        expiresAt,
+        email,
       });
     } else {
       return res.status(400).json({
@@ -93,3 +80,5 @@ app.post('/signup', async (req, res) => {
     });
   }
 });
+
+module.exports = router;

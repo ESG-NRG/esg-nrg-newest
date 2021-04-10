@@ -2,7 +2,7 @@ import { useState, useContext } from 'react';
 import actions from '../api/index';
 import TheContext from '../TheContext';
 
-export default function Login() {
+export default function Signup() {
   const { history, user, setUser } = useContext(TheContext);
   const [userData, setUserData] = useState({
     email: '',
@@ -12,7 +12,7 @@ export default function Login() {
   const signupUser = (e) => {
     e.preventDefault();
     actions
-      .logIn(userData)
+      .signUp(userData)
       .then((user) => {
         setUser({ ...user?.data });
         history.push('/profile');
@@ -22,6 +22,7 @@ export default function Login() {
         console.log(data.message);
       });
   };
+
   function handleChange(event) {
     setUserData({
       ...userData,
@@ -29,8 +30,8 @@ export default function Login() {
     });
   }
   return (
-    <div>
-      <h1>Login</h1>
+    <>
+      <h1>Signup</h1>
       <form onSubmit={signupUser}>
         <input
           name="email"
@@ -46,8 +47,8 @@ export default function Login() {
           placeholder="password"
           value={userData.password}
         />
-        <button type="submit">Login</button>
+        <button type="submit">Signup</button>
       </form>
-    </div>
+    </>
   );
 }
