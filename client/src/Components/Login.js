@@ -14,7 +14,7 @@ export default function Login() {
     actions
       .logIn(userData)
       .then((user) => {
-        setUser({ ...user?.data });
+        setUser({ ...user?.data }); //user info --> profile.js
         history.push('/profile');
       })
       .catch((error) => {
@@ -28,6 +28,8 @@ export default function Login() {
   return (
     <div>
       <h1>Login</h1>
+       
+
       <form onSubmit={signupUser}>
         <input
           name="email"

@@ -1,10 +1,11 @@
 .nav {
   display: flex;
   justify-content: space-around;
+  border: 2px solid blue;
 }
 
-.nav a {
+/* .nav a {
 border: 3px solid black;
 width: 50%;
 padding: 20px;
-}
+} */

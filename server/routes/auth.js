@@ -80,4 +80,11 @@ router.post('/signup', async (req, res) => {
   }
 });
 
+router.get('/logout' , function(req, res, next) {
+  
+  emitter.setMaxListeners()
+  req.logout();
+  res.redirect('/')
+} )
+
 module.exports = router;

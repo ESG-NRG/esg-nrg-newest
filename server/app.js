@@ -16,6 +16,7 @@ app.use(express.json());
 
 app.use('/auth', auth);
 
+
 //Connecting to backend
 
 async function connect() {
