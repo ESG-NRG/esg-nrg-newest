@@ -23,10 +23,7 @@ export default function Login() {
       });
   };
   function handleChange(event) {
-    setUserData({
-      ...userData,
-      [event.target.name]: event.target.value,
-    });
+    setUserData({...userData, [event.target.name]: event.target.value,});
   }
   return (
     <div>
@@ -38,14 +35,14 @@ export default function Login() {
           onChange={handleChange}
           placeholder="email"
           value={userData.email}
-        />
+        /><br/>
         <input
           name="password"
           type="password"
           onChange={handleChange}
           placeholder="password"
           value={userData.password}
-        />
+        /><br/>
         <button type="submit">Login</button>
       </form>
     </div>

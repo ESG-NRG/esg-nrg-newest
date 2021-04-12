@@ -21,7 +21,7 @@ app.use('/auth', auth);
 async function connect() {
   try {
     mongoose.Promise = global.Promise;
-    await mongoose.connect('mongodb://localhost/ESG-NRG', {
+    await mongoose.connect(process.env.MONGODB_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
@@ -30,7 +30,7 @@ async function connect() {
     console.log('Mongoose error', err);
   }
   app.listen(process.env.PORT);
-  console.log(`Listening on:${process.env.PORT}`);
+  console.log(`Listening on : ${process.env.PORT}`);
 }
 
 connect();

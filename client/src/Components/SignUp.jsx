@@ -31,7 +31,7 @@ export default function Signup() {
   }
   return (
     <>
-      <h1>Signup</h1>
+      <h1>Sign Up</h1>
       <form onSubmit={signupUser}>
         <input
           name="email"
@@ -39,14 +39,14 @@ export default function Signup() {
           onChange={handleChange}
           placeholder="email"
           value={userData.email}
-        />
+        /> <br/>
         <input
           name="password"
           type="password"
           onChange={handleChange}
           placeholder="password"
           value={userData.password}
-        />
+        /> <br/>
         <button type="submit">Signup</button>
       </form>
     </>
