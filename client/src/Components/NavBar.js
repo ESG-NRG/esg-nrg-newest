@@ -7,7 +7,7 @@ import Signup from './SignUp';
 function NavBar(props) {
   return (
     <div>
-      <nav className="nav">
+      <nav className="container mx-auto border-4 border-indigo-600">
       
           <Link to="/">Home</Link>
           {/* <li>{!user.email ? <Link to="/auth">Log in</Link> : <Link to="/profile">Profile</Link>}</li> */}
