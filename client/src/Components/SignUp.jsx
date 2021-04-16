@@ -32,23 +32,23 @@ export default function Signup() {
   }
   return (
     <>
-      <h1>Sign Up</h1>
+      <h1>Register</h1>
       <form onSubmit={signupUser}>
-        <input
+        <input className="border focus:border-blue-500" 
           name="email"
           type="string"
           onChange={handleChange}
           placeholder="email"
           value={userData.email}
         /> <br/>
-        <input
+        <input className="border focus:border-blue-500"
           name="password"
           type="password"
           onChange={handleChange}
           placeholder="password"
           value={userData.password}
         /> <br/>
-        <button type="submit">Signup</button>
+        <button className="border-2 border-blue-500 hover:border-gray-500 rounded-lg" type="submit">Signup</button>
       </form>
     </>
   );
