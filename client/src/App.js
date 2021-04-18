@@ -1,12 +1,13 @@
 import './App.css';
-import NavBar from './Components/NavBar';
+import NavBar from './Components/NavBar'
 
-import SignUp from './Components/SignUp';
-import Login from './Components/Login';
-import Profile from './Components/Profile';
-import TheContext from './TheContext';
+import SignUp from './Components/SignUp'
+import Login from './Components/Login'
+import Profile from './Components/Profile'
+import TheContext from './TheContext'
 import Hero from './Components/Hero'
-import { Route, Switch, useHistory } from 'react-router-dom';
+import LandingPage from './Components/LandingPage'
+import { Route, Switch, useHistory } from 'react-router-dom'
 import { useState } from 'react';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       </TheContext.Provider>
 
       <Hero />
+      <LandingPage />
     </div>
   );
 }

@@ -7,9 +7,9 @@ import Signup from './SignUp';
 function NavBar(props) {
   return (
     <div>
-      <nav className="py-4 flex space-x-4 container mx-auto border-4 border-gray-100">
+      <nav className="py-4 flex space-x-10 container mx-auto border-4 border-gray-100">
       
-        <div>
+        <div className= "flex space-x-12">
         <Link to="/about-us">ABOUT US</Link>
         <Link to="/faqs">FAQS</Link>
         <Link to="/projects">PROJECTS</Link>
@@ -20,9 +20,9 @@ function NavBar(props) {
        
 
        
-    <div>
+    <div className= "flex flex-row-reverse space-x-1 space-x-reverse">
       <Link to="/signup">Register</Link> 
-      <Link to="/login">Sign In</Link>
+      <Link to="/login">Sign In |</Link>
     </div>
       </nav>
     </div>
