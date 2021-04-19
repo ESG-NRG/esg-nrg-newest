@@ -7,117 +7,174 @@
     padding: 0;
     font-family: 
 } */
+/* .container {
+  width: 1152px;
+  height: 468px;
 
+} */
+
+.hero {
+  color: white;
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+  font-style: bold;
+  width: 784px;
+  height: 500px;
+  line-height: 46.96px;
+}
+/* .heroSmall {
+  color: white;
+  font-size:24px;
+  font-family: 'Raleway', sans-serif;
+  font-style: bold;
+  width: 784px;
+  height: 54px;
+  line-height: 28.18px;
+} */
 .marine {
-    color: #43AA87;
-    font-style: bold;
-    font-size: 40px;
-    font-family: 'Raleway', sans-serif
+  color: #43aa87;
+  font-style: bold;
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
-ul{
-    width: 100%
+ul {
+  width: 100%;
 }
 li {
-    font-size: 20px;
-    margin-left: 55px;
-    list-style-type: circle;
-    width: 50%;
-    text-align: left;
+  font-size: 20px;
+  margin-left: 55px;
+  list-style-type: circle;
+  width: 50%;
+  text-align: left;
 }
 
 .button {
-    border: 2px solid #D64933;
-    background-color: #D64933;
-    color: white;
-    border-radius: 5px;
-
+  border: 2px solid #d64933;
+  background-color: #d64933;
+  color: white;
+  border-radius: 5px;
+  width: 168px;
+  height: 40px;
+  line-height: 17.61px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
 }
 
+/* Images */
 .sprout {
-    width: 400px;
-    height: 584px;
+  width: 400px;
+  height: 584px;
 }
 
 .rightship {
-    width: 576px;
-    height: 393px;
+  width: 576px;
+  height: 393px;
 }
 
 .leftship {
-    width: 576px;
-    height: 393px;
+  width: 576px;
+  height: 393px;
 }
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+.heroz {
+  border-bottom-right-radius: 170px;
+  width: 1352px;
+  height: 650px;
+}
+
+.calculateIcon {
+  width: 72.78px;
+  height: 72.5px;
+}
+
+.visualizeIcon {
+  width: 72px;
+  height: 72px;
+}
+
+.compensateIcon {
+  width: 72px;
+  height: 72px;
+}
 
 /* NavBar */
 /* Position and sizing of burger button */
 .bm-burger-button {
-    position: absolute;
-    width: 36px;
-    height: 30px;
-    right: 36px;
-    top: 36px;
-  }
-  
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: #373a47;
-  }
-  
-  /* Color/shape of burger icon bars on hover*/
-  .bm-burger-bars-hover {
-    background: #a90000;
-  }
-  
-  /* Position and sizing of clickable cross button */
-  .bm-cross-button {
-    height: 24px;
-    width: 24px;
-  }
-  
-  /* Color/shape of close button cross */
-  .bm-cross {
-    background: #bdc3c7;
-  }
-  
-  /*
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
   Sidebar wrapper styles
   Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
   */
-  .bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-  }
-  
-  /* General sidebar styles */
-  .bm-menu {
-    background: #373a47;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
-  }
-  
-  /* Morph shape necessary with bubble or elastic */
-  .bm-morph-shape {
-    fill: #373a47;
-  }
-  
-  /* Wrapper for item list */
-  .bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-  }
-  
-  /* Individual item */
-  .bm-item {
-    display: inline-block;
-  }
-  
-  /* Styling of overlay */
-  .bm-overlay {
-    background: rgba(0, 0, 0, 0.3);
-  }
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}

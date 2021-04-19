@@ -2,6 +2,9 @@ import React from 'react'
 import babysprout from '../images/babysprout.png'
 import rightship from '../images/rightship.png'
 import leftship from '../images/leftship.png'
+import calculate from '../images/calculate.png'
+import visualize from '../images/visualize.png'
+import compensate from '../images/compensate.png'
 
 
 function LandingPage() {
@@ -10,15 +13,18 @@ function LandingPage() {
       <p className='marine'>MARINE OFFSET PLATFORM</p> <br />
       <p> Averting CO<sub>2</sub> emissions and pulling them out of the atmosphere in just <sub>3</sub> simple steps.</p><br />
       <div className='flex flex-row'>
-        <div> CALCULATE
+        <div> <img className='calculateIcon' src={calculate} />
+          CALCULATE
           <p> Your ship's emissions across fuel types, with a purpose-built digital marine platform.</p>
         </div>
 
-        <div>VISUALIZE
+        <div> <img className='visualizeIcon' src={visualize} />
+          VISUALIZE
          <p>The different routes, vessels and cargoes your fleet carries and show your esg colors.</p>
         </div>
 
-        <div>COMPENSATE
+        <div> <img className='compensateIcon' src={compensate} />
+          COMPENSATE
           <p> Your impact on the environment with a variety of verified carbon offset projects</p>
         </div>
       </div><br />
@@ -26,7 +32,7 @@ function LandingPage() {
       <p className='marine'>REBUILD THE OCEAN + ENVIRONMENT</p> <br />
       <p>The selection of the project It's 100% up to you!</p> <br />
       <div className='flex flex-row'>
-        <ul className='md:leading-normal list-inside'>
+        <div><ul className='md:leading-normal list-inside'>
           <li>
             Find offsets that are additional, traceable, verifiable, performing
             and contributing to sustainable development.
@@ -44,11 +50,15 @@ function LandingPage() {
           </li>
           <br />
         </ul>
-      </div>
-      <div><img className='sprout' src={babysprout} alt='baby tree sprout' /></div>
-      <button className='button' onClick>
+        <button className='button' onClick>
         EXPLORE PROJECTS
       </button>
+        </div>
+        <div><img className='sprout' src={babysprout} alt='baby tree sprout' /></div>
+     
+      </div>
+      
+     
 
 
       <div className='flex flex-row'>
