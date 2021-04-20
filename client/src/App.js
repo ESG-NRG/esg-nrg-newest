@@ -1,20 +1,21 @@
-import "./App.css";
-import NavBar from "./Components/NavBar";
+import './App.css'
+import NavBar from './Components/NavBar'
+import Footer from './Components/Footer'
 
-import SignUp from "./Components/SignUp";
-import Login from "./Components/Login";
-import Profile from "./Components/Profile";
-import TheContext from "./TheContext";
+import SignUp from './Components/SignUp'
+import Login from './Components/Login'
+import Profile from './Components/Profile'
+import TheContext from './TheContext'
 
-import LandingPage from "./Components/LandingPage";
-import { Route, Switch, useHistory } from "react-router-dom";
-import { useState } from "react";
+import LandingPage from './Components/LandingPage'
+import { Route, Switch, useHistory } from 'react-router-dom'
+import { useState } from 'react';
 
 function App() {
   let [user, setUser] = useState(null);
   const history = useHistory();
   return (
-    <div className="App">
+    <div className='App'>
       
         <TheContext.Provider value={{ history, user, setUser }}>
           <NavBar />
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/login" render={(props) => <Login {...props} />} />
             <Route exact path="/profile" render={(props) => <Profile {...props} />} />
           </Switch>
+          <Footer />
         </TheContext.Provider>
      
     </div>
