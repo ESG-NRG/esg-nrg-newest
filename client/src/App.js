@@ -15,19 +15,6 @@ function App() {
   const history = useHistory();
   return (
     <div className="App">
-<<<<<<< HEAD
-      <TheContext.Provider value={{ history, user, setUser }}>
-        <NavBar />
-        {/* <Hero /> */}
-        <Switch>
-          <Route exact path="/" render={(props) => <LandingPage />} />
-          <Route exact path="/signup" render={(props) => <SignUp />} />
-          <Route exact path="/login" render={(props) => <Login {...props} />} />
-          <Route exact path="/profile" render={(props) => <Profile {...props} />}
-          />
-        </Switch>
-      </TheContext.Provider>
-=======
       <header>
         <TheContext.Provider value={{ history, user, setUser }}>
           <NavBar />
@@ -39,7 +26,6 @@ function App() {
             />
           </Switch>
         </TheContext.Provider>
->>>>>>> 6bc6056b687ff8620a3b24421689845b025cdc91
 
         <Hero />
       </header>
