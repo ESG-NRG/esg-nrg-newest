@@ -5,7 +5,7 @@ import SignUp from "./Components/SignUp";
 import Login from "./Components/Login";
 import Profile from "./Components/Profile";
 import TheContext from "./TheContext";
-import Hero from "./Components/Hero";
+
 import LandingPage from "./Components/LandingPage";
 import { Route, Switch, useHistory } from "react-router-dom";
 import { useState } from "react";
@@ -15,9 +15,10 @@ function App() {
   const history = useHistory();
   return (
     <div className="App">
-      <header>
+      
         <TheContext.Provider value={{ history, user, setUser }}>
           <NavBar />
+          <LandingPage />
           <Switch>
             <Route exact path="/signup" render={(props) => <SignUp />} />
             <Route exact path="/login" render={(props) => <Login {...props} />}
@@ -26,12 +27,7 @@ function App() {
             />
           </Switch>
         </TheContext.Provider>
-
-        <Hero />
-      </header>
-      <body>
-        <LandingPage />
-      </body>
+     
     </div>
   );
 }
