@@ -16,31 +16,6 @@ function LandingPage() {
 
   // const screenSize = useScreenSize();
   // const [isOpen, setOpen] = useState(false)
-
-  const subscribe_button = document.querySelector(".subscribe_button");
-
-  subscribe_button.addEventListener('click', function(){
-    const subscribing = document.querySelector(".subscribing");
-    const thanks = document.querySelector(".thanks");
-    const login = document.querySelector(".login");
-
-    subscribing.classList.add("subscribing_active");
-    subscribe_button.classList.add("subscribe_button_active");
-    setTimeout(function(){
-      login.classList.add("login_active");
-    }, 1200);
-    setTimeout(function(){
-      thanks.classList.add("thanks_active");
-    }, 1400);
-
-    setTimeout(function(){
-      thanks.classList.remove("thanks_active");
-      login.classList.remove("login_active");
-      subscribing.classList.remove("subscribing_active");
-      subscribe_button.classList.remove("subscribe_button_active");
-    }, 4000);
-  });
-
   return (
      <>
      {/* Ternary for screen optimization
@@ -161,17 +136,9 @@ function LandingPage() {
       </div>
 
 
-      <div class="container">
+      
       <p>Join our Newsletter to get the latest news on environmental sustainability.</p> 
-        <div class="login_bar">
-          <span class="login">Subscribe</span>
-          <img className='subscribe_button' onclick='subscribeOnClick()' src={arrow} />
-          
-          <span class="subscribing"></span>
-          <span class="thanks"> Thank you. You have been subscribed</span>
-        </div>
-      </div>
-           
+        
   </div>
 
     
