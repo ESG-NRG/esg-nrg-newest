@@ -6,6 +6,7 @@ import leftship from '../images/leftship.png'
 
 function LandingPage() {
   return (
+     
     <div>
       <p className='marine'>MARINE OFFSET PLATFORM</p> <br />
       <p> Averting CO<sub>2</sub> emissions and pulling them out of the atmosphere in just <sub>3</sub> simple steps.</p><br />

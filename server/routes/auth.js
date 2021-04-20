@@ -42,7 +42,7 @@ router.post('/login', async (req, res) => {
 router.post('/signup', async (req, res) => {
   try {
     const { email } = req.body;
-
+    console.log("here we are in auth.js", email)
 
     const existingEmail = await User.findOne({
       email,
@@ -59,10 +59,13 @@ router.post('/signup', async (req, res) => {
       password: hashedPassword,
     };
     const newUser = new User(userData);
+
+console.log("Line 63 of auth.js", newUser)
+
     const savedUser = await newUser.save();
     if (savedUser) {
       const token = createToken(savedUser);
-
+console.log("loine 68", token)
       return res.json({
         message: 'User created!',
         token,

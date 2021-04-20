@@ -11,6 +11,7 @@ export default function Login() {
 
   const signupUser = (e) => {
     e.preventDefault();
+    console.log("here we are at signupUser function")
     actions
       .logIn(userData)
       .then((user) => {
@@ -28,8 +29,6 @@ export default function Login() {
   return (
     <div>
       <h1>Login</h1>
-       
-
       <form onSubmit={signupUser}>
         <input className="border focus:border-blue-500"
           name="email"
