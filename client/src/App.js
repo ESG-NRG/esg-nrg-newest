@@ -18,13 +18,11 @@ function App() {
       
         <TheContext.Provider value={{ history, user, setUser }}>
           <NavBar />
-          <LandingPage />
           <Switch>
+            <Route exact path="/" render={(props) => <LandingPage {...props} />} />
             <Route exact path="/signup" render={(props) => <SignUp />} />
-            <Route exact path="/login" render={(props) => <Login {...props} />}
-            />
-            <Route exact path="/profile" render={(props) => <Profile {...props} />}
-            />
+            <Route exact path="/login" render={(props) => <Login {...props} />} />
+            <Route exact path="/profile" render={(props) => <Profile {...props} />} />
           </Switch>
         </TheContext.Provider>
      
