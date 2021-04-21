@@ -127,12 +127,15 @@ function LandingPage() {
           <div className='flex flex-wrap flex-row'>
             <img className='teampic' src={placeholderpic} /><br/><br/>
             <img className='teampic' src={placeholderpic} /> <br/><br/><br/><br/>WEB DEV
+            
           </div><br/>
+
           
           <div className='flex flex-wrap flex-row'>
             <img className='teampic' src={placeholderpic} />
             <img className='teampic' src={placeholderpic} /> <br/><br/><br/><br/>UX/UI
           </div>
+         
       </div>
 
 

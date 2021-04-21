@@ -15,8 +15,9 @@ function NavBar(props) {
        
     //hamburger
     <Menu right> 
+        <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a>
         <a id="about-us" className="menu-item" href="/about-us">ABOUT US</a>
-        <a id="faqs" className="menu-item" href="/faqs">FAQS</a>
+        <a id="faqs" className="menu-item" href="/faq">FAQS</a>
         <a id="projects" className="menu-item" href="/projects">PROJECTS</a>
         <a id="our-impact" className="menu-item" href="/our-impact">OUR IMPACT</a>
         <a id="contact-us" className="menu-item" href="/contact-us">CONTACT US</a>
@@ -28,9 +29,9 @@ function NavBar(props) {
         <div>
         <nav className="py-4 flex space-x-10 container mx-auto border-4 border-gray-100">
           <div className="flex space-x-12">
-          <img className='logo' src={logo} alt='esg-nrg logo' />
+          <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a>
             <Link to="/about-us">ABOUT US</Link>
-            <Link to="/faqs">FAQS</Link>
+            <Link to="/faq">FAQS</Link>
             <Link to="/projects">PROJECTS</Link>
             <Link to="/our-impact">OUR IMPACT</Link>
             <Link to="/contact-us">CONTACT US</Link>
