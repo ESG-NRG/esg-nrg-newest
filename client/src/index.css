@@ -2,77 +2,110 @@
 @tailwind components;
 @tailwind utilities;
 
-/* /////////////////NavBar//////////////// */
-/* Position and sizing of burger button */
-.bm-burger-button {
-  position: absolute;
-  width: 36px;
-  height: 30px;
-  right: 36px;
-  top: 36px;
+
+/* //////////Hamburger NavBar////// */
+a {
+  color: rgb(167, 155, 155);
+  text-decoration: none;
 }
 
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-  background: #373a47;
+.p-menu1{
+   height: 100%;
 }
 
-/* Color/shape of burger icon bars on hover*/
-.bm-burger-bars-hover {
-  background: #a90000;
+/* Hamburger */
+.hamburger1 {
+  height: 45px;
+  margin: 20px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: flex-end;
 }
 
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 24px;
-  width: 24px;
+.hamburger1 div {
+  background-color: rgb(61, 61, 61);
+  position: right;
+  width: 40px;
+  height: 5px;
+  margin-top: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-/* Color/shape of close button cross */
-.bm-cross {
-  background: #bdc3c7;
+#toggle1 {
+  display: none;
 }
 
-/*
-  Sidebar wrapper styles
-  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-  */
-.bm-menu-wrap {
-  position: fixed;
-  height: 100%;
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: 22.5px;
 }
 
-/* General sidebar styles */
-.bm-menu {
-  background: #373a47;
-  padding: 2.5em 1.5em 0;
-  font-size: 1.15em;
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: -5px;
 }
 
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47;
+#toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
-/* Wrapper for item list */
-.bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
+#toggle1:checked ~ .menu1 {
+  height: 340px;
 }
 
-/* Individual item */
-.bm-item {
-  display: inline-block;
+
+/* Menu */
+.menu1 {
+  width: 100%;
+  background-color: white;
+  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: 1fr repeat(4, 0.5fr);
+  grid-row-gap: 25px;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height .4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-/* Styling of overlay */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+.menu1 a:first-child {
+  margin-top: 40px;
 }
 
+.menu1 a:last-child {
+  margin-bottom: 40px;
+}
+
+.link1 {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  font: 700 20px 'Oswald', sans-serif;
+}
+
+.link1:hover {
+  background-color: gray;
+  color: rgb(61, 61, 61);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 /* //////////////Text////////////////////// */
 body {
-    margin: 50px;
+  /* margin: 50px; */
+  margin: 0;
 }
 
 .hero {
@@ -88,13 +121,13 @@ body {
 }
 
 .heroSmall {
-   color: white;
-  font-size:24px;
-  font-family: 'Raleway';
+  color: white;
+  font-size: 24px;
+  font-family: "Raleway";
   font-weight: 600;
   font-style: bold;
   line-height: 28.18px;
-} 
+}
 
 .centered {
   position: absolute;
@@ -116,10 +149,10 @@ body {
   vertical-align: top;
 }
 
-p {
+/* p {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-}
+} */
 
 ul {
   width: 100%;
@@ -146,7 +179,7 @@ li {
 }
 
 .secondLine {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: regular;
   text-align: left;
   vertical-align: center;
@@ -155,16 +188,19 @@ li {
 }
 
 .smallRoboto {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
   line-height: 21.09px;
   text-align: center;
 }
+.smallerTitles {
+  font-size: 32px;
+}
 
 .smallRaleway {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   /* font-weight: 400; */
   font-style: normal;
   font-size: 20px;
@@ -191,7 +227,6 @@ li {
   width: 576px;
   height: 393px;
   top: 1858px;
-
 }
 
 .leftship {
@@ -200,11 +235,10 @@ li {
   left: -980px;
 }
 
-
 .heroz {
   border-bottom-right-radius: 170px;
-  width: 1152px;
-  height: 468px;
+  /* width: 1152px;
+  height: 468px; */
 }
 
 .calculateIcon {
@@ -212,6 +246,8 @@ li {
   height: 72.5px;
   top: 727px;
   left: 190.86px;
+  display: flex;
+  justify-content: center;
 }
 
 .visualizeIcon {
@@ -255,9 +291,9 @@ li {
 }
 
 .footer {
-  width: 1152px;
-  height: 443px;
-  top: 3716px;
+  /* width: 1152px; */
+  /* height: 443px;
+  top: 3716px; */
 }
 .footer li {
   list-style: none;
@@ -277,7 +313,7 @@ li {
 .copyright {
   margin-top: 55px;
   height: 24px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 12px;
   line-height: 24px;
   display: flex;
