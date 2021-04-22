@@ -14,16 +14,32 @@ function NavBar(props) {
       {screenSize === "xs" || screenSize === "sm" ? (
        
     //hamburger
-    <Menu right> 
-        <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a>
-        <a id="about-us" className="menu-item" href="/about-us">ABOUT US</a>
-        <a id="faqs" className="menu-item" href="/faq">FAQS</a>
-        <a id="projects" className="menu-item" href="/projects">PROJECTS</a>
-        <a id="our-impact" className="menu-item" href="/our-impact">OUR IMPACT</a>
-        <a id="contact-us" className="menu-item" href="/contact-us">CONTACT US</a>
-        <a id="register" className="menu-item" href="/signup">Register</a>
-        <a id="login" className="menu-item" href="/login">Sign In</a>
-    </Menu>
+        <Menu right>
+        <div className="p-menu1">
+        <nav id="navbar" className="navigation" role="navigation">
+          <input id="toggle1" type="checkbox" />
+          <label className="hamburger1" for="toggle1">
+            <div className="top"></div>
+            <div className="meat"></div>
+            <div className="bottom"></div>
+          </label>
+
+          
+        
+          <nav className="menu1">
+            <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a>
+            <a id="about-us" className="menu-item" href="/about-us">ABOUT US</a>
+            <a id="faqs" className="menu-item" href="/faq">FAQS</a>
+            <a id="projects" className="menu-item" href="/projects">PROJECTS</a>
+            <a id="our-impact" className="menu-item" href="/our-impact">OUR IMPACT</a>
+            <a id="contact-us" className="menu-item" href="/contact-us">CONTACT US</a>
+            <a id="register" className="menu-item" href="/signup">Register</a>
+            <a id="login" className="menu-item" href="/login">Sign In</a>
+          </nav>
+      </nav>
+    </div>
+        </Menu>
+   
    
       ) : (
         <div>

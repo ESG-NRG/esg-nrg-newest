@@ -1,0 +1,64 @@
+/* //////Mobile//////// */
+
+
+
+/* /////////MARINELANDING///////// */
+.marineM {
+    color: #43aa87;
+    font-style: bold;
+    font-size: 28px;
+    font-family: "Raleway";
+    font-weight: 700;
+    line-height: 32.87px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.smallerTitles {
+    font-size: 32px;
+}
+
+.smallRobotoM {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-align: center;
+}
+
+.calculateIcon {
+    width: 72.78px;
+    height: 72.5px;
+    top: 727px;
+    left: 190.86px;
+    display: flex;
+    justify-content: center;
+}
+  
+.visualizeIcon {
+    width: 72px;
+    height: 72px;
+    top: 742.84px;
+    left: 539.5px;
+}
+  
+.compensateIcon {
+    width: 72px;
+    height: 72px;
+    top: 727px;
+    left: 890.14px;
+}
+
+
+/* /////////REBUILDLANDING///////// */
+.sproutM {
+    width: 250PX;
+    height: 260px;
+    top: 1381px;
+    left: 16px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  
