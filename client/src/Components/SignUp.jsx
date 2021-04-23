@@ -5,6 +5,7 @@ import TheContext from "../TheContext";
 import loginPic from "../images/loginPic.png";
 import largeEicon from "../images/largeEicon.svg";
 import xIcon from "../images/xIcon.png";
+import pwView from "../images/IconArtwork.png";
 import Login from "./Login";
 import "../signUpIn.css";
 
@@ -36,6 +37,22 @@ export default function Signup() {
       [event.target.name]: event.target.value,
     });
   }
+  
+
+
+  // const passwordView = (e) => {
+   
+  //   console.log("vewPwType before ternary", viewPwType)
+  //     viewPwType[e] !== "password" ? viewPwType[e] = "password" : viewPwType[e] = "text"
+  // }
+
+  function passwordsView(e) {
+    console.log("vewPwType before ternary", viewPwType)
+      viewPwType[e] !== "password" ? viewPwType[e] = "password" : viewPwType[e] = "text"
+  }
+
+  let viewPwType=["text", "text"]
+
   return (
     <>
       <section class="flex flex-row ...">
@@ -89,16 +106,29 @@ export default function Signup() {
             <br />
             <br></br>
             <p class="formName">Password</p>
-            <input
-              className="inputPW"
-              name="password"
-              type="password"
-              onChange={handleChange}
-              placeholder=""
-              value={userData.password}
-            />{" "}
-            <br />
-            <br></br>
+            <div class="passwordContainer">
+              <input
+                className="inputPW"
+                name="password"
+                id="firstPassword"
+                type={viewPwType[1]}
+                onChange={handleChange}
+                placeholder=""
+                value={userData.password}
+              />
+              {/* <input
+                type="image"
+                name="passwordView1"
+                id="passwordView"
+                onclick={passwordsView(0)}
+                src={pwView}
+                alt="View Password"
+              ></input> */}
+              <img src={pwView} id="passwordView" onclick={passwordsView(0)} alt="view password"></img>
+              
+              <br />
+              <br></br>
+            </div>
             <p class="formName">Re-Enter Password</p>
             {/* {userData.password === userData.password2 ? (
               <input
@@ -119,7 +149,8 @@ export default function Signup() {
                 value={userData.password2}
               />
             )} */}
-            <input
+            <div class="passwordContainer">
+              <input
                 className="inputPW"
                 name="password2"
                 type="password"
@@ -127,11 +158,17 @@ export default function Signup() {
                 placeholder=""
                 value={userData.password2}
               />
-            <br />
-            <br></br>
-            {userData.password === userData.password2 ? (<button class="createBtn" type="submit">
-              Create your account
-            </button>) : (<button class="createBtn">Passwords Must Match</button>) }
+              <img src={pwView} id="passwordView"></img>
+              <br />
+              <br></br>
+            </div>
+            {userData.password === userData.password2 ? (
+              <button class="createBtn" type="submit">
+                Create your account
+              </button>
+            ) : (
+              <button class="createBtn">Passwords Must Match</button>
+            )}
             {/* <button class="createBtn" type="submit">
               Create your account
             </button> */}

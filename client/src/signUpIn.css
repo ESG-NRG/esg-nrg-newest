@@ -95,11 +95,24 @@ input:hover {
   outline: none;
 }
 
-.inputPW {
+.passwordContainer {
+  position: relative;
+}
+
+#passwordView {
+  width: 18px;
+  height: 12px;
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  z-index: 20;
+}
+
+/* .inputPW {
   background-image: url(./images/IconArtwork.png);
   background-repeat: no-repeat;
   background-position: 95% center;
-}
+} */
 
 /* .borderBad {
   color: #d64933;
