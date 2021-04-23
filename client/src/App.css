@@ -34,6 +34,7 @@
     left: 190.86px;
     display: flex;
     justify-content: center;
+    margin: auto;
 }
   
 .visualizeIcon {
@@ -41,6 +42,7 @@
     height: 72px;
     top: 742.84px;
     left: 539.5px;
+    margin: auto;
 }
   
 .compensateIcon {
@@ -48,8 +50,8 @@
     height: 72px;
     top: 727px;
     left: 890.14px;
+    margin: auto;
 }
-
 
 /* /////////REBUILDLANDING///////// */
 .sproutM {

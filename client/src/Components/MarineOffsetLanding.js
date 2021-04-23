@@ -19,7 +19,9 @@ function MarineOffsetLanding(props) {
             </p>
             <br />
             <div className="flex flex-col">
-              <div>
+
+
+              <div className='gregcenter'>
                 <img className="calculateIcon" src={calculate} />
                 <p className="smallerTitles">CALCULATE</p>
                 <p className="smallRoboto">
@@ -27,6 +29,11 @@ function MarineOffsetLanding(props) {
                   digital marine platform.
                 </p>
               </div>
+
+
+
+
+
 
               <div>
                 <img className="visualizeIcon" src={visualize} />
