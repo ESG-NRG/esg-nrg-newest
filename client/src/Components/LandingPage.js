@@ -9,11 +9,11 @@ import RebuildingLanding from "./RebuildingLanding";
 function LandingPage() {
   return (
         <div>
-          {/* <HeroLanding /> */}
+          <HeroLanding />
           <MarineOffsetLanding />
           <RebuildingLanding />
-          {/* <FocusEngergiesLanding />
-          <AssetsLanding /> */}
+          <FocusEngergiesLanding />
+          <AssetsLanding />
         </div>
   );
 }

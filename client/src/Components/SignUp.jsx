@@ -51,7 +51,7 @@ export default function Signup() {
       viewPwType[e] !== "password" ? viewPwType[e] = "password" : viewPwType[e] = "text"
   }
 
-  let viewPwType=["text", "text"]
+  let viewPwType=["password", "password"]
 
   return (
     <>
@@ -124,7 +124,8 @@ export default function Signup() {
                 src={pwView}
                 alt="View Password"
               ></input> */}
-              <img src={pwView} id="passwordView" onclick={passwordsView(0)} alt="view password"></img>
+              <button type="button" src={pwView} id="passwordView" onclick={passwordsView(0)}></button>
+              {/* <img src={pwView} id="passwordView" onclick={passwordsView(0)} alt="view password"></img> */}
               
               <br />
               <br></br>
