@@ -2,15 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* //////////Hamburger NavBar////// */
 a {
   color: rgb(167, 155, 155);
   text-decoration: none;
 }
 
-.p-menu1{
-   height: 100%;
+.p-menu1 {
+  height: 100%;
 }
 
 /* Hamburger */
@@ -39,25 +38,24 @@ a {
 
 #toggle1:checked + .hamburger1 .top {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   margin-top: 22.5px;
 }
 
 #toggle1:checked + .hamburger1 .meat {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   margin-top: -5px;
 }
 
 #toggle1:checked + .hamburger1 .bottom {
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
 #toggle1:checked ~ .menu1 {
   height: 340px;
 }
-
 
 /* Menu */
 .menu1 {
@@ -75,7 +73,7 @@ a {
   text-align: center;
   height: 0px;
   overflow: hidden;
-  transition: height .4s ease;
+  transition: height 0.4s ease;
   z-index: 120;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -93,7 +91,7 @@ a {
   width: 100%;
   margin: 0;
   padding: 10px 0;
-  font: 700 20px 'Oswald', sans-serif;
+  font: 700 20px "Oswald", sans-serif;
 }
 
 .link1:hover {
@@ -157,6 +155,7 @@ body {
 ul {
   width: 100%;
 }
+
 li {
   font-size: 20px;
   margin-left: 55px;
@@ -197,6 +196,9 @@ li {
 }
 .smallerTitles {
   font-size: 32px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .smallRaleway {
@@ -223,16 +225,25 @@ li {
   border-radius: 16px;
 }
 
+.ships {
+  display: flex;
+  height: 100px;
+}
+
 .rightship {
-  width: 576px;
-  height: 393px;
-  top: 1858px;
+  width: 75%;
+  /* height: 393px;
+  top: 1858px; */
+  margin-left: 50%;
+  border: 5px green solid;
 }
 
 .leftship {
-  width: 576px;
-  height: 393px;
-  left: -980px;
+  width: 50%;
+  /* height: 393px;
+  left: -980px; */
+  float: left;
+  border: 3px red solid;
 }
 
 .heroz {

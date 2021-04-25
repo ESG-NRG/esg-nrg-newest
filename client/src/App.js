@@ -26,7 +26,7 @@ function App() {
             <Route exact path="/faq" render={(props) => <FAQ {...props} />} />
           </Switch>
           {/* <FAQ /> */}
-          <Footer />
+          {/* <Footer /> */}
         </TheContext.Provider>
      
     </div>

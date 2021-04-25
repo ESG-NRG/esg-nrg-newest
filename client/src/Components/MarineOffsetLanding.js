@@ -12,35 +12,25 @@ function MarineOffsetLanding(props) {
       <>
         {screenSize === "xs" || screenSize === "sm" ? (
         <div>
-              <p className="marineM">MARINE <br/>OFFSET <br/>PLATFORM</p> <br />
+              <p className="marineM">MARINE <br/>OFFSET <br/>PLATFORM (MOP)</p> <br />
             <p className="smallRobotoM">
-              Averting CO<sub>2</sub> emissions and pulling them out of the
-              atmosphere in just <sub>3</sub> simple steps.
+            designed by shipping professionals for the maritime transportation industry.
             </p>
             <br />
             <div className="flex flex-col">
-
-
               <div className='gregcenter'>
                 <img className="calculateIcon" src={calculate} />
                 <p className="smallerTitles">CALCULATE</p>
                 <p className="smallRoboto">
-                  Your ship's emissions across fuel types, with a purpose-built
-                  digital marine platform.
+                Your ship's emissions across fuel types (fuel oils, distillates, bio-fuels, LNG, ammonia, methanol)
                 </p>
               </div>
-
-
-
-
-
-
               <div>
                 <img className="visualizeIcon" src={visualize} />
                 <p className="smallerTitles"> VISUALIZE</p>
                 <p className="smallRoboto">
-                  The different routes, vessels and cargoes your fleet carries and
-                  show your esg colors.
+                  The different voyages, vessels and cargoes your fleet carry and
+                  show your true ESG colors.
                 </p>
               </div>
 
@@ -58,10 +48,9 @@ function MarineOffsetLanding(props) {
           </div>
         ) : (
           <div>
-              <p className="marine">MARINE OFFSET PLATFORM</p> <br />
+              <p className="marine">MARINE OFFSET PLATFORM (MOP)</p> <br />
             <p className="secondLine">
-              Averting CO<sub>2</sub> emissions and pulling them out of the
-              atmosphere in just <sub>3</sub> simple steps.
+              designed by shipping professionals for the maritime transportation industry.
             </p>
             <br />
             <div className="flex flex-row">
@@ -69,8 +58,7 @@ function MarineOffsetLanding(props) {
                 <img className="calculateIcon" src={calculate} />
                 <p className="smallerTitles">CALCULATE</p>
                 <p className="smallRoboto">
-                  Your ship's emissions across fuel types, with a purpose-built
-                  digital marine platform.
+                  Your ship's emissions across fuel types (fuel oils, distillates, bio-fuels, LNG, ammonia, methanol)
                 </p>
               </div>
 
@@ -78,8 +66,8 @@ function MarineOffsetLanding(props) {
                 <img className="visualizeIcon" src={visualize} />
                 <p className="smallerTitles"> VISUALIZE</p>
                 <p className="smallRoboto">
-                  The different routes, vessels and cargoes your fleet carries and
-                  show your esg colors.
+                The different voyages, vessels and cargoes your fleet carry and
+                  show your true ESG colors.
                 </p>
               </div>
 

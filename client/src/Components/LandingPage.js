@@ -12,8 +12,8 @@ function LandingPage() {
           {/* <HeroLanding /> */}
           <MarineOffsetLanding />
           <RebuildingLanding />
-          {/* <FocusEngergiesLanding />
-          <AssetsLanding /> */}
+          <FocusEngergiesLanding />
+          {/* <AssetsLanding /> */}
         </div>
   );
 }

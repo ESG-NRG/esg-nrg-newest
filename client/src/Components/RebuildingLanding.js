@@ -17,8 +17,8 @@ function RebuildingLanding(props) {
             <div>
               <ul className="md:leading-normal list-outside">
                 <p className="marineM">REBUILD THE OCEAN + ENVIRONMENT</p> <br />
-                <p className="smallRobotoM">
-                  The selection of the project It's 100% up to you!
+                <p className="secondLine">
+                  with open, pragmatic guidance from your ESG Adviser
                 </p>
                 <br />
                 <li>
@@ -27,19 +27,16 @@ function RebuildingLanding(props) {
                 </li>
                 <br />
                 <li>
-                  Filter and compare across different project types, standards,
-                  vintages, prices, proponents and country of origin.
+                  Filter across different carbon offset project types, developers, standards, price ranges, SDG goals and countries of origin.
                 </li>
                 <br />
                 <li>
-                  Weight the pros/cons of each project with your esg advisor...
-                  <br />
-                  ...and if you cant find what you like, we'll hunt it for you!
+                  Weigh the proclaimed project benefits against it's likely impact on the environment with market insights and research provided within the Marine Offset Platform (MOP).
                 </li>
                 <br />
               </ul>
-              <button className="button" onClick>
-                EXPLORE PROJECTS
+              <button className="buttonM" onClick>
+                DISCOVER NOW
               </button>
             </div>
           </div>
@@ -52,7 +49,7 @@ function RebuildingLanding(props) {
               <ul className="md:leading-normal list-outside">
                 <p className="marine">REBUILD THE OCEAN + ENVIRONMENT</p> <br />
                 <p className="secondLine">
-                  The selection of the project It's 100% up to you!
+                  with open, pragmatic guidance from your ESG Adviser
                 </p>
                 <br />
                 <li>
@@ -61,14 +58,11 @@ function RebuildingLanding(props) {
                 </li>
                 <br />
                 <li>
-                  Filter and compare across different project types, standards,
-                  vintages, prices, proponents and country of origin.
+                  Filter across different carbon offset project types, developers, standards, price ranges, SDG goals and countries of origin.
                 </li>
                 <br />
                 <li>
-                  Weight the pros/cons of each project with your esg advisor...
-                  <br />
-                  ...and if you cant find what you like, we'll hunt it for you!
+                  Weigh the proclaimed project benefits against it's likely impact on the environment with market insights and research provided within the Marine Offset Platform (MOP).
                 </li>
                 <br />
               </ul>

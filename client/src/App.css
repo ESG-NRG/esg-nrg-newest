@@ -16,14 +16,15 @@
 
 .smallerTitles {
     font-size: 32px;
+    margin: auto;
 }
 
 .smallRobotoM {
     font-family: "Roboto";
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
-    line-height: 18.75px;
+    font-size: 14px;
+    line-height: 16.41px;
     text-align: center;
 }
 
@@ -62,5 +63,44 @@
     border-radius: 16px;
     display: flex;
     justify-content: center;
-  }
+    margin: auto;
+}
+
+.secondLine {
+    font-family: "Roboto";
+    font-style: regular;
+    text-align: left;
+    vertical-align: center;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+
+ul {
+    width: 100%;
+}
   
+li {
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 16px;
+    list-style-type: circle;
+    width: 50%;
+    text-align: left;
+}
+
+.buttonM {
+    border: 2px solid #d64933;
+    background-color: #d64933;
+    color: white;
+    border-radius: 5px;
+    width: 156px;
+    height: 39px;
+    line-height: 17.61px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    margin: auto;
+}
+
+
+/* /////////FocusingLanding////////////// */
