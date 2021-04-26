@@ -48,7 +48,7 @@ function RebuildingLanding(props) {
             <div>
               <ul className="md:leading-normal list-outside">
                 <p className="marine">REBUILD THE OCEAN + ENVIRONMENT</p> <br />
-                <p className="secondLine">
+                <p className="smallRaleway">
                   with open, pragmatic guidance from your ESG Adviser
                 </p>
                 <br />

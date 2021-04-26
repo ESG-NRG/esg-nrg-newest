@@ -231,25 +231,22 @@ li {
 }
 
 .rightship {
-  width: 75%;
-  /* height: 393px;
-  top: 1858px; */
-  margin-left: 50%;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
   border: 5px green solid;
 }
 
 .leftship {
-  width: 50%;
-  /* height: 393px;
-  left: -980px; */
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
   float: left;
   border: 3px red solid;
 }
 
 .heroz {
   border-bottom-right-radius: 170px;
-  /* width: 1152px;
-  height: 468px; */
 }
 
 .calculateIcon {

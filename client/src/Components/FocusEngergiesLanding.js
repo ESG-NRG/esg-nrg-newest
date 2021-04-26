@@ -83,7 +83,7 @@ function FocusEngergiesLanding(props) {
                 <p className="marine">
                   FOCUS YOUR ENERGY <br /> TOWARDS YOUR CLIENT
                 </p>
-                <p className="secondLine">
+                <p className="smallRaleway">
                   turn your emissions into a source of positive energy.
                 </p>{" "}
                 <br />
@@ -101,11 +101,7 @@ function FocusEngergiesLanding(props) {
                 </ul>
               </div>
               <div>
-                <img
-                  className="rightship"
-                  src={rightship}
-                  alt="full cargo ship"
-                />
+                <img className="rightship" src={rightship} alt="full cargo ship"/>
               </div>
             </div>
 
