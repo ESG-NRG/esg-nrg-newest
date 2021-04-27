@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
+import useScreenSize from "./useScreenSize";
 import actions from "../api/index";
 import TheContext from "../TheContext";
 import loginPic from "../images/loginPic.png";
@@ -15,6 +16,9 @@ export default function Signup() {
     email: "",
     password: "",
   });
+  const screenSize = useScreenSize();
+  let phone = false
+  screenSize === "xs" || screenSize === "sm" ? ( phone = true ) : phone = false
 
   const signupUser = (e) => {
     e.preventDefault();
@@ -37,40 +41,57 @@ export default function Signup() {
       [event.target.name]: event.target.value,
     });
   }
-  
-
 
   // const passwordView = (e) => {
-   
+
   //   console.log("vewPwType before ternary", viewPwType)
   //     viewPwType[e] !== "password" ? viewPwType[e] = "password" : viewPwType[e] = "text"
   // }
 
   function passwordsView(e) {
-    console.log("vewPwType before ternary", viewPwType)
-      viewPwType[e] !== "password" ? viewPwType[e] = "password" : viewPwType[e] = "text"
+    console.log("vewPwType before ternary", viewPwType);
+    viewPwType[e] !== "password"
+      ? (viewPwType[e] = "password")
+      : (viewPwType[e] = "text");
   }
 
-  let viewPwType=["password", "password"]
+  let viewPwType = ["password", "password"];
 
   return (
     <>
-      <section class="flex flex-row ...">
-        <div class="relative z-0 justify-items-center ...">
-          <img src={loginPic} alt="Tanker on Water" width="317"></img>
-          <img
-            class="largeE"
-            src={largeEicon}
-            alt="Large E Icon Logo"
-            width="58.8"
-          ></img>
-          <p class="lorem">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis turpis
-            neque, volutpat ac.
-          </p>
-        </div>
+      <section class={phone ? "nothing" : "flex flex-row ..." }>
+        {screenSize !== "xs" && screenSize !== "sm" ? (
+          <div class="relative z-0 justify-items-center ...">
+            <img src={loginPic} alt="Tanker on Water" width="317"></img>
+            <img
+              class="largeE"
+              src={largeEicon}
+              alt="Large E Icon Logo"
+              width="58.8"
+            ></img>
+            <p class="lorem">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+              turpis neque, volutpat ac.
+            </p>
+          </div>
+        ) : (
+          <div>
+            {/* <img
+              class="largeEMobile"
+              src={largeEicon}
+              alt="Large E Icon Logo"
+              width="58.8"
+            ></img> */}
+          </div>
+        )}
 
-        <div class="rightDiv">
+        <div class={phone ?"rightDivMobile" : "rightDiv" }>
+          {phone ? (<div><img
+              class="largeEMobile"
+              src={largeEicon}
+              alt="Large E Icon Logo"
+              width="58.8"
+            ></img></div>) : (<div></div>) }
           <Link class="x" to="/">
             <img src={xIcon} alt="X to cancel" width="20"></img>
           </Link>
@@ -94,7 +115,18 @@ export default function Signup() {
             />{" "}
             <br />
             <br></br>
-            <p class="formName">Email</p>
+            <div class="flex flex-row ...">
+              <p class="formName">Email</p>
+              {/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+                userData.email
+              ) ? (
+                <p className="emailvalidate">{"  "}</p>
+              ) : (
+                <p className="emailValidate">
+                  &nbsp;&nbsp;&nbsp;&nbsp;Please enter valid email
+                </p>
+              )}
+            </div>
             <input
               // className="hover:border-blue-500"
               name="email"
@@ -124,13 +156,27 @@ export default function Signup() {
                 src={pwView}
                 alt="View Password"
               ></input> */}
-              <button type="button" src={pwView} id="passwordView" onclick={passwordsView(0)}></button>
+              <button
+                type="button"
+                src={pwView}
+                id="passwordView"
+                onclick={passwordsView(0)}
+              ></button>
               {/* <img src={pwView} id="passwordView" onclick={passwordsView(0)} alt="view password"></img> */}
-              
+
               <br />
               <br></br>
             </div>
-            <p class="formName">Re-Enter Password</p>
+            <div class="flex flex-row ...">
+              <p class="formName">Re-Enter Password</p>
+              {userData.password === userData.password2 ? (
+                <p></p>
+              ) : (
+                <p className="emailValidate">
+                  &nbsp;&nbsp;&nbsp;&nbsp;Passwords must match
+                </p>
+              )}
+            </div>
             {/* {userData.password === userData.password2 ? (
               <input
                 className="hover:border-blue-500"
@@ -163,12 +209,15 @@ export default function Signup() {
               <br />
               <br></br>
             </div>
-            {userData.password === userData.password2 ? (
+            {userData.password === userData.password2 &&
+            /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+              userData.email
+            ) ? (
               <button class="createBtn" type="submit">
-                Create your account
+                Create Your Account
               </button>
             ) : (
-              <button class="createBtn">Passwords Must Match</button>
+              <button class="noCreateBtn">Create Your Account</button>
             )}
             {/* <button class="createBtn" type="submit">
               Create your account
