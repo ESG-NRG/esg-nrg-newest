@@ -4,6 +4,8 @@ import AssetsLanding from "./AssetsLanding";
 import FocusEngergiesLanding from "./FocusEngergiesLanding";
 import MarineOffsetLanding from "./MarineOffsetLanding";
 import RebuildingLanding from "./RebuildingLanding";
+import '../App.css'
+import '../index.css'
 
 
 function LandingPage() {

@@ -44,16 +44,17 @@ function MarineOffsetLanding(props) {
                 </p>
               </div>
             </div>
-            <br />
+            <br /><br />
           </div>
         ) : (
           <div>
+          <div className='MOPsection' >
               <p className="marine">MARINE OFFSET PLATFORM (MOP)</p> <br />
             <p className="smallRaleway">
               designed by shipping professionals for the maritime transportation industry.
             </p>
-            <br />
-            <div className="flex flex-row">
+            <br /> <br />
+            <div class='MOP'>
               <div>
                 <img className="calculateIcon" src={calculate} />
                 <p className="smallerTitles">CALCULATE</p>
@@ -80,6 +81,7 @@ function MarineOffsetLanding(props) {
               </div>
             </div>
             <br />
+            </div>
           </div>
         )}
       </>

@@ -37,7 +37,7 @@ function Footer() {
                             <li className='smallRoboto'><a href="/about-us">About</a></li>
                             <li className='smallRoboto'><a href="/faq">FAQ</a></li>
                             <li className='smallRoboto'><a href="/projects">Projects</a></li>
-                            <li className='smallRoboto'><a href='/'><img className='logo' src={footerLogo} alt='esg-nrg logo' /></a></li>
+                            <li><a href='/'><img className='footerLogoTop' src={footerLogo} alt='esg-nrg logo' /></a></li>
                             <li className='smallRoboto'><a href="/our-impact">Our Impact</a></li>
                             <li className='smallRoboto'><a href="/contact-us">Contact Us</a></li>
                             <li className='smallRoboto'><a href="/legal">Legal</a></li>
@@ -51,7 +51,7 @@ function Footer() {
                                 <a href='/'><img className='footerLogo' src={Instagram} alt='esg-nrg instagram' /></a>
                             </div>
                             
-                            <div className='copyright'><em>&copy; ESG-NRG. 2021. We love our planet!</em></div>
+                            <div className='copyright'><em>&copy; ESG-NRG. 2021. Saving the earth one ton at a time!</em></div>
                 </div>
                 )}
                 

@@ -157,7 +157,8 @@ ul {
 }
 
 li {
-  font-size: 20px;
+  font-family: "Roboto";
+  font-size: 22px;
   margin-left: 55px;
   list-style-type: circle;
   width: 50%;
@@ -191,7 +192,7 @@ li {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  line-height: 21.09px;
+  line-height: 23px;
   text-align: center;
 }
 .smallerTitles {
@@ -216,6 +217,16 @@ li {
   left: 96px;
 }
 
+.container {
+  width: 49vw !important;
+}
+
+.containerText {
+  width: 77%;
+  margin-left: 17%;
+  margin-top: 17%;
+}
+
 /* ///////////////Images///////////////////// */
 .sprout {
   width: 357px;
@@ -225,28 +236,25 @@ li {
   border-radius: 16px;
 }
 
-.ships {
-  display: flex;
-  height: 100px;
-}
-
 .rightship {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
-  border: 5px green solid;
+  width: 49vw !important;
 }
 
 .leftship {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
-  float: left;
-  border: 3px red solid;
+  width: 49vw !important;
 }
 
 .heroz {
   border-bottom-right-radius: 170px;
+}
+
+.MOP {
+  display: flex;
+  justify-content: space-around;
+}
+
+.MOPsection {
+  margin: 8%;
 }
 
 .calculateIcon {
@@ -256,6 +264,7 @@ li {
   left: 190.86px;
   display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 .visualizeIcon {
@@ -263,6 +272,7 @@ li {
   height: 72px;
   top: 742.84px;
   left: 539.5px;
+  margin: auto;
 }
 
 .compensateIcon {
@@ -270,6 +280,7 @@ li {
   height: 72px;
   top: 727px;
   left: 890.14px;
+  margin: auto;
 }
 
 .logo {
@@ -298,6 +309,11 @@ li {
   margin-top: 20px;
 }
 
+.esg {
+  width: 90px;
+  margin-bottom: 3%;
+}
+
 .footer {
   /* width: 1152px; */
   /* height: 443px;
@@ -308,9 +324,12 @@ li {
   color: white;
 }
 
+.footerLogoTop {
+  width: 90px;
+}
+
 .footerLogo {
   width: 44px;
-  height: 44px;
 }
 
 .alignFooter {
@@ -320,11 +339,20 @@ li {
 
 .copyright {
   margin-top: 55px;
-  height: 24px;
-  font-family: "Raleway";
-  font-size: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
   line-height: 24px;
   display: flex;
   justify-content: center;
   color: white;
+}
+
+#passwordView {
+  width: 18px;
+  height: 12px;
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  z-index: 20;
 }

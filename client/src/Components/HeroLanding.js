@@ -6,7 +6,7 @@ function HeroLanding(props) {
     return (
         <div>
             <div className="bg-local ">
-            <img src={heropic} alt="hero pic" />
+            <img className='heroz' src={heropic} alt="hero pic" />
           </div>
           <div className="centered">
             <p className="hero">

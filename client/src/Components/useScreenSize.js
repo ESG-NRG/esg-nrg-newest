@@ -10,7 +10,7 @@ function getScreenSize() {
   //     return "md";
   //   } else if (matchMedia("(max-width: 1024px)").matches) {
   //     return "lg";
-  //   } else if (matchMedia("(max-width: 12880px)").matches) {
+  //   } else if (matchMedia("(max-width: 1280px)").matches) {
   //     return "xl";
   //   } else if (matchMedia("(max-width: 1536px)").matches) {
   //     return "2xl";

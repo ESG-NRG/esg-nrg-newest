@@ -43,7 +43,7 @@ function RebuildingLanding(props) {
             
         </div>
     ) : ( 
-      <div>
+      <div className='MOPsection'>
         <div className="flex flex-row my-10">
             <div>
               <ul className="md:leading-normal list-outside">

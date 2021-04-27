@@ -1,16 +1,69 @@
+import Carousel, {Dots} from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
 import React, { useState } from "react";
-import useScreenSize from "./useScreenSize";
+import esg from '../images/esgnrg.png';
 import placeholderpic from "../images/placeholderpic.png";
 import arrow from "../images/subscriptionArrow.png";
+import useScreenSize from "./useScreenSize";
+
 
 
 function AssetsLanding(props) {
+  const screenSize = useScreenSize();
+  const [isOpen, setOpen] = useState(false)
+    const [value, setValue] = useState(0);
+  
+    const onChange = value => {
+    setValue(value);
+    }
+  
     return (
-        <div>
-            <p className="marine">OUR ASSETS</p>
+      <>
+        {screenSize === "xs" || screenSize === "sm" ? (
+          <div className='MOPsection'>
+            <p className="marine">OUR ASSETS</p> <br/>
           <p className="smallRaleway">
-            are people, experience and a little bit of code.
-          </p>
+            people, experience and a little bit of code.
+          </p><br/><br/>
+          
+          
+            <Carousel value={value} onChange={onChange} plugins={['dots']}>
+              <img className='carousel' src={placeholderpic} />
+              <img className='carousel' src={placeholderpic} />
+              <img className='carousel' src={placeholderpic} />
+              <img className='carousel' src={placeholderpic} />
+              <img className='carousel' src={placeholderpic} />
+              <img className='carousel' src={placeholderpic} />
+              <img className='carousel' src={placeholderpic} />
+            </Carousel>
+            <Dots
+              value={this.state.value}
+              onChange={this.onChange}
+              thumbnails={[
+                (<img key={1}   />),
+                ...
+                (<img key={12}  />),
+              ]}
+            />
+            <br/><br/> <br/><br/> <br/><br/>
+          <div className="flex flex-col place-items-center">
+            <img src={esg} className='esg' /><br/><br/><br/><br/>
+          <p className='smallRoboto'>
+            Join our weekly newsletter to hear the latest developments <br/> on sustainability in shipping.
+          </p><br/>
+          <div class='passwordContainer'>
+            <input className='inputPW'  placeholder='' value='Your email here' />
+            <img src={arrow} id="passwordView" />
+          </div>
+
+          </div>
+        </div>
+        ) : (
+          <div className='MOPsection'>
+            <p className="marine">OUR ASSETS</p> <br/>
+          <p className="smallRaleway">
+            people, experience and a little bit of code.
+          </p><br/><br/><br/><br/>
           <div className="bigBossMans">
             <div>
       
@@ -42,19 +95,29 @@ function AssetsLanding(props) {
             <br />
 
             <div className="flex flex-wrap flex-row">
-              <img className="teampic" src={placeholderpic} />
+              <img className="teampic" src={placeholderpic} />    
               <img className="teampic" src={placeholderpic} /> <br />
               <br />
               <br />
               <br />
               UX/UI
             </div>
+          </div><br/><br/><br/><br/><br/>
+          <div className="flex flex-col place-items-center">
+            <img src={esg} className='esg' /><br/><br/><br/><br/>
+          <p className='smallRoboto'>
+            Join our weekly newsletter to hear the latest developments <br/> on sustainability in shipping.
+          </p><br/>
+          <div class='passwordContainer'>
+            <input className='inputPW'  placeholder='' value='Your email here' />
+            <img src={arrow} id="passwordView" />
           </div>
-          <p>
-            Join our Newsletter to get the latest news on environmental
-            sustainability.
-          </p>
+
+          </div>
         </div>
+        )}
+        
+      </>
     );
 }
 

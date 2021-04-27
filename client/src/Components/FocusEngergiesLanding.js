@@ -12,12 +12,20 @@ function FocusEngergiesLanding(props) {
       <>
         {screenSize === "xs" || screenSize === "sm" ? (
           <div>
+          <div>
+                <img
+                  className="rightshipM"
+                  src={rightship}
+                  alt="full cargo ship"
+                />
+              </div>
             <div className="my-10">
-            <div className="flex flex-row">
+            <div >
+            <div> 
               <div>
                 <p className="marine">
                   FOCUS YOUR ENERGY <br /> TOWARDS YOUR CLIENT
-                </p>
+                </p><br/>
                 <p className="secondLine">
                   turn your emissions into a source of positive energy.
                 </p>{" "}
@@ -25,50 +33,45 @@ function FocusEngergiesLanding(props) {
                 <ul>
                 <li className="smallRoboto">
                     Target cargo-owners who care about net-zero.
-                  </li>
+                  </li><br/>
                   <li className="smallRoboto">
                     Align your corporate identity with your company actions.
-                  </li>
+                  </li><br/>
                   <li className="smallRoboto">
                     Display your ESG achievements to the market.
-                  </li>
+                  </li><br/>
     
                 </ul>
               </div>
-              <div>
-                <img
-                  className="rightship"
-                  src={rightship}
-                  alt="full cargo ship"
-                />
               </div>
-            </div>
-
-            <div className="flex flex-row">
-              <div>
+         
+            </div><br/>
+        
+            <div>
                 <img
-                  className="leftship"
+                  className="leftshipM"
                   src={leftship}
                   alt="empty cargo ship"
                 />
               </div>
+            <div className="flex flex-row my-10">
               <div>
                 <p className="marine">
                   FLAT $<sub>1</sub>/MT COMMISION
-                </p>
+                </p><br/>
                 <p className="smallRaleway">
                   only transparent transactions and incentives.
-                </p>
+                </p><br/>
                 <ul>
                 <li className="smallRoboto">
                     We broker our deals, we don't trade.
-                  </li>
+                  </li><br/>
                   <li className="smallRoboto">
                     Some of the lowest fees in the industry (other middlemen take <b>10-30%</b> of the transaction value).
-                  </li>
+                  </li><br/>
                   <li className="smallRoboto">
                     More money flows directly to project development and local communities.
-                  </li>
+                  </li><br/>
                 </ul>
               </div>
             </div>
@@ -78,59 +81,67 @@ function FocusEngergiesLanding(props) {
      
           <div>
             <div className="my-10">
+
+
             <div className="flex flex-row">
-              <div>
+            <div className='container'> 
+              <div className='containerText'>
                 <p className="marine">
                   FOCUS YOUR ENERGY <br /> TOWARDS YOUR CLIENT
-                </p>
+                </p> <br/>
                 <p className="smallRaleway">
                   turn your emissions into a source of positive energy.
-                </p>{" "}
+                </p>
                 <br />
                 <ul>
                 <li className="smallRoboto">
                     Target cargo-owners who care about net-zero.
-                  </li>
+                  </li><br/><br/>
                   <li className="smallRoboto">
                     Align your corporate identity with your company actions.
-                  </li>
+                  </li><br/><br/>
                   <li className="smallRoboto">
                     Display your ESG achievements to the market.
                   </li>
     
                 </ul>
               </div>
+              </div>
               <div>
-                <img className="rightship" src={rightship} alt="full cargo ship"/>
+                <img className="rightship" class='container' src={rightship} alt="full cargo ship"/>
               </div>
             </div>
 
+
+
             <div className="flex flex-row">
               <div>
-                <img
+                <img className='container'
                   className="leftship"
                   src={leftship}
                   alt="empty cargo ship"
                 />
               </div>
-              <div>
+              <div class='container'>
+              <div className='containerText'>
                 <p className="marine">
                   FLAT $<sub>1</sub>/MT COMMISION
-                </p>
+                </p> <br/>
                 <p className="smallRaleway">
                   only transparent transactions and incentives.
-                </p>
+                </p><br/>
                 <ul>
                 <li className="smallRoboto">
                     We broker our deals, we don't trade.
-                  </li>
+                  </li><br/><br/>
                   <li className="smallRoboto">
                     Some of the lowest fees in the industry (other middlemen take <b>10-30%</b> of the transaction value).
-                  </li>
+                  </li><br/><br/>
                   <li className="smallRoboto">
                     More money flows directly to project development and local communities.
                   </li>
                 </ul>
+              </div>
               </div>
             </div>
           </div>

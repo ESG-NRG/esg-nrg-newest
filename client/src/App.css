@@ -104,3 +104,28 @@ li {
 
 
 /* /////////FocusingLanding////////////// */
+.rightshipM {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 16px;
+}
+  
+.leftshipM {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 16px;
+}
+
+.containerText {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+
+/* /////////////AssetsLanding////////////// */
+.carousel {
+    width: 154px;
+    border-radius: 10px;
+}
