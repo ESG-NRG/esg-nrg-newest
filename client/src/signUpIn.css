@@ -10,11 +10,13 @@
 }
 
 .largeEMobile {
-  border-color: brown;
-  position: absolute;
-  top: 15%;
   margin: auto;
-  transform: translate(-50%, -50%);
+  padding-top: 50px;
+  /* height: 45px; */
+  /* position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
 
 .lorem {
@@ -39,12 +41,23 @@
   position: relative;
   width: 450px;
   margin-left: 5%;
-  border: 1px solid purple;
 }
 
 .welcome {
   position: absolute;
   top: 9.2%;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+  color: #43aa87;
+}
+
+.welcomeMobile {
+  /* position: absolute; */
+  padding-top: 9.2%;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -66,6 +79,10 @@
 .alreadyDiv {
   position: absolute;
   top: 15.4%;
+}
+
+.alreadyDivMobile {
+  padding-top: 10px;
 }
 
 .signIn {
@@ -202,14 +219,39 @@ input:hover {
   top: 84.8%;
 }
 
+.termsMobile {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  width: 424px;
+  color: #464646;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .x {
   position: absolute;
   right: 0;
   top: 6.5%;
 }
 
+.xMobile {
+  position: absolute;
+  right: 10px;
+  top: 60px;
+}
+
 .form {
   position: absolute;
   left: 0;
   top: 26.7%;
+}
+
+.formMobile {
+  padding-top: 10px;
+  /* position: absolute;
+  left: 0;
+  top: 26.7%; */
 }
