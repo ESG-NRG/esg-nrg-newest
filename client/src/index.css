@@ -58,6 +58,14 @@ a {
 }
 
 /* Menu */
+
+.wideNav {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  min-width: 675px;
+}
+
 .menu1 {
   width: 100%;
   background-color: white;
@@ -178,7 +186,7 @@ ul {
 }
 
 .mdRoboto {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   /* font-weight: 400; */
   font-size: 24px;
@@ -196,7 +204,7 @@ ul {
 .smallerTitles {
   font-size: 32px;
   line-height: 37.57px;
-  font-weight: 700px;;
+  font-weight: 700px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -346,6 +354,7 @@ ul {
   display: flex;
   justify-content: center;
   color: white;
+  margin-bottom: 20px;
 }
 
 #passwordView {

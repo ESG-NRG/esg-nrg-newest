@@ -1,229 +1,226 @@
 /* //////Mobile//////// */
 
 .MOPsectionM {
-    margin: 8%;
+  margin: 8%;
 }
 
 /* /////////////HeroLanding/////////////// */
 .heroM {
-    color: white;
-    font-size: 20px;
-    font-weight: 1000;
-    /* line-height: 46.96px; */
-    font-family: "Raleway";
-    font-style: bold;
-    /* width: 784px; */
-    /* height: 94px; */
-    /* line-height: 32.87px; */
+  color: white;
+  font-size: 20px;
+  font-weight: 1000;
+  /* line-height: 46.96px; */
+  font-family: "Raleway";
+  font-style: bold;
+  /* width: 784px; */
+  /* height: 94px; */
+  /* line-height: 32.87px; */
 }
-  
+
 .heroSmallM {
-    color: white;
-    font-size: 14px;
-    font-family: "Raleway";
-    font-weight: 400;
-    font-style: normal;
-    line-height: 28.18px;
+  color: white;
+  font-size: 14px;
+  font-family: "Raleway";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28.18px;
 }
-  
+
 .centeredM {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .herozM {
-    /* border-bottom-right-radius: 50px; */
+  /* border-bottom-right-radius: 50px; */
 }
 
 .buttonM {
-    border: 2px solid #d64933;
-    background-color: #d64933;
-    color: white;
-    border-radius: 5px;
-    width: 130px;
-    height: 39px;
-    line-height: 17.61px;
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
+  border: 2px solid #d64933;
+  background-color: #d64933;
+  color: white;
+  border-radius: 5px;
+  width: 130px;
+  height: 39px;
+  line-height: 17.61px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
 }
-
-
 
 /* /////////MARINELANDING///////// */
 .marineM {
-    color: #43aa87;
-    font-style: bold;
-    font-size: 28px;
-    font-family: "Raleway";
-    font-weight: 700;
-    line-height: 32.87px;
-    text-align: left;
-    vertical-align: top;
+  color: #43aa87;
+  font-style: bold;
+  font-size: 28px;
+  font-family: "Raleway";
+  font-weight: 700;
+  line-height: 32.87px;
+  text-align: left;
+  vertical-align: top;
 }
 
 .smallerTitles {
-    font-size: 32px;
-    margin: auto;
+  font-size: 32px;
+  margin: auto;
 }
 
 .smallRobotoM {
-    font-family: "Roboto";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 18.75px;
-    /* text-align: center; */
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18.75px;
+  /* text-align: center; */
 }
 
 .smallRobotoM2 {
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16.41px;
-    text-align: center;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+  text-align: center;
 }
 
 .calculateIcon {
-    width: 72.78px;
-    height: 72.5px;
-    top: 727px;
-    left: 190.86px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
+  width: 72.78px;
+  height: 72.5px;
+  top: 727px;
+  left: 190.86px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
-  
+
 .visualizeIcon {
-    width: 72px;
-    height: 72px;
-    top: 742.84px;
-    left: 539.5px;
-    margin: auto;
+  width: 72px;
+  height: 72px;
+  top: 742.84px;
+  left: 539.5px;
+  margin: auto;
 }
-  
+
 .compensateIcon {
-    width: 72px;
-    height: 72px;
-    top: 727px;
-    left: 890.14px;
-    margin: auto;
+  width: 72px;
+  height: 72px;
+  top: 727px;
+  left: 890.14px;
+  margin: auto;
 }
 
 /* /////////REBUILDLANDING///////// */
 .sproutM {
-    width: 328px;
-    height: 300px;
-    border-radius: 16px;
-    margin: auto;
+  width: 328px;
+  height: 300px;
+  border-radius: 16px;
+  margin: auto;
 }
 
 .paragraphM {
-    width: 100%;
+  width: 100%;
 }
 
 /* ul {
     width: 100%;
 } */
-  
+
 li {
-    font-family: 'Roboto';
-    font-size: 14px;
-    line-height: 16px;
-    list-style-type: circle;
-    width: 50%;
-    text-align: left;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 16px;
+  list-style-type: circle;
+  width: 50%;
+  text-align: left;
 }
 
 .buttonM {
-    border: 2px solid #d64933;
-    background-color: #d64933;
-    color: white;
-    border-radius: 5px;
-    width: 156px;
-    height: 39px;
-    line-height: 17.61px;
-    text-align: center;
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
-    margin: auto;
+  border: 2px solid #d64933;
+  background-color: #d64933;
+  color: white;
+  border-radius: 5px;
+  width: 156px;
+  height: 39px;
+  line-height: 17.61px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  margin: auto;
 }
-
 
 /* /////////FocusingLanding////////////// */
 .rightshipM {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-    border-radius: 16px;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 16px;
 }
-  
+
 .leftshipM {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
-    border-radius: 16px;
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  border-radius: 16px;
 }
 
 .containerText {
-    margin-left: 5%;
-    margin-top: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
 }
 
 .focusParagraphM {
-    width: 100%;
+  width: 100%;
 }
-  
+
 .flatParagraphM {
-    width: 100%;
+  width: 100%;
 }
 
 /* /////////////AssetsLanding////////////// */
 .carousel {
-    width: 154px;
-    border-radius: 10px;
+  width: 154px;
+  border-radius: 10px;
 }
 
 .smallRobotoM {
-    font-family: "Roboto";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 21.09px;
-    /* text-align: center; */
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21.09px;
+  /* text-align: center; */
 }
-
 
 /* ////////////////Footer/////////////// */
 .footerM li {
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
-  
-  .footerLogoTopM {
-    width: 53px;
-  }
-  
-  .footerLogoM {
-    width: 44px;
-  }
-  
-  .alignFooterM {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .copyrightM {
-    margin-top: 55px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-size: 14px;
-    line-height: 24px;
-    display: flex;
-    justify-content: center;
-    color: white;
-  }
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.footerLogoTopM {
+  width: 53px;
+}
+
+.footerLogoM {
+  width: 44px;
+}
+
+.alignFooterM {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.copyrightM {
+  margin-top: 55px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 20px;
+}

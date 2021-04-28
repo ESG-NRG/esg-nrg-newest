@@ -67,6 +67,7 @@ function Footer() {
                             </div><br/>
                             
                             <div className='copyright'><em>&copy; ESG-NRG. 2021. Saving the earth one ton at a time!</em></div>
+                  
                 </div>
                 )}
                 

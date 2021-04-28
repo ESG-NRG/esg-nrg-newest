@@ -17,7 +17,7 @@ function App() {
     <div className='App'>
       
         <TheContext.Provider value={{ history, user, setUser }}>
-          <NavBar />
+          {/* <NavBar /> */}
           <Switch>
             <Route exact path="/" render={(props) => <LandingPage {...props} />} />
             <Route exact path="/signup" render={(props) => <SignUp />} />

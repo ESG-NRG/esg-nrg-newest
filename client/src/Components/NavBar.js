@@ -23,8 +23,6 @@ function NavBar(props) {
             <div className="meat"></div>
             <div className="bottom"></div>
           </label>
-
-          
         
           <nav className="menu1">
             <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a>
@@ -42,9 +40,10 @@ function NavBar(props) {
    
    
       ) : (
-        <div>
-        <nav className="py-4 flex space-x-10 container mx-auto border-4 border-gray-100">
-          <div className="flex space-x-12">
+       
+        <div className="wideNav">
+        <nav className="py-4 flex space-x-8 ">
+          <div className="flex space-x-6">
           <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a>
             <Link to="/about-us">ABOUT US</Link>
             <Link to="/faq">FAQS</Link>
@@ -55,10 +54,11 @@ function NavBar(props) {
 
           <div className="flex flex-row-reverse space-x-1 space-x-reverse">
             <Link to="/signup">Register</Link>
-            <Link to="/login">Sign In </Link>
+            <Link to="/login">Sign In | </Link>
           </div>
         </nav>
       </div>
+  
       )}
 
     </>
