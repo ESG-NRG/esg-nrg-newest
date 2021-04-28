@@ -1,5 +1,55 @@
 /* //////Mobile//////// */
 
+.MOPsectionM {
+    margin: 8%;
+}
+
+/* /////////////HeroLanding/////////////// */
+.heroM {
+    color: white;
+    font-size: 20px;
+    font-weight: 1000;
+    /* line-height: 46.96px; */
+    font-family: "Raleway";
+    font-style: bold;
+    /* width: 784px; */
+    /* height: 94px; */
+    /* line-height: 32.87px; */
+}
+  
+.heroSmallM {
+    color: white;
+    font-size: 14px;
+    font-family: "Raleway";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28.18px;
+}
+  
+.centeredM {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.herozM {
+    /* border-bottom-right-radius: 50px; */
+}
+
+.buttonM {
+    border: 2px solid #d64933;
+    background-color: #d64933;
+    color: white;
+    border-radius: 5px;
+    width: 130px;
+    height: 39px;
+    line-height: 17.61px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+}
+
 
 
 /* /////////MARINELANDING///////// */
@@ -23,6 +73,14 @@
     font-family: "Roboto";
     font-weight: 400;
     font-style: normal;
+    font-size: 16px;
+    line-height: 18.75px;
+    /* text-align: center; */
+}
+
+.smallRobotoM2 {
+    font-family: 'Roboto';
+    font-weight: 400;
     font-size: 14px;
     line-height: 16.41px;
     text-align: center;
@@ -56,28 +114,19 @@
 
 /* /////////REBUILDLANDING///////// */
 .sproutM {
-    width: 250PX;
-    height: 260px;
-    top: 1381px;
-    left: 16px;
+    width: 328px;
+    height: 300px;
     border-radius: 16px;
-    display: flex;
-    justify-content: center;
     margin: auto;
 }
 
-.secondLine {
-    font-family: "Roboto";
-    font-style: regular;
-    text-align: left;
-    vertical-align: center;
-    font-size: 16px;
-    line-height: 18.75px;
-}
-
-ul {
+.paragraphM {
     width: 100%;
 }
+
+/* ul {
+    width: 100%;
+} */
   
 li {
     font-family: 'Roboto';
@@ -123,9 +172,58 @@ li {
     margin-top: 5%;
 }
 
+.focusParagraphM {
+    width: 100%;
+}
+  
+.flatParagraphM {
+    width: 100%;
+}
 
 /* /////////////AssetsLanding////////////// */
 .carousel {
     width: 154px;
     border-radius: 10px;
 }
+
+.smallRobotoM {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21.09px;
+    /* text-align: center; */
+}
+
+
+/* ////////////////Footer/////////////// */
+.footerM li {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .footerLogoTopM {
+    width: 53px;
+  }
+  
+  .footerLogoM {
+    width: 44px;
+  }
+  
+  .alignFooterM {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .copyrightM {
+    margin-top: 55px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }

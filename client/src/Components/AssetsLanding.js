@@ -1,6 +1,6 @@
+import React, { useState } from "react";
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import React, { useState } from "react";
 import esg from '../images/esgnrg.png';
 import placeholderpic from "../images/placeholderpic.png";
 import arrow from "../images/subscriptionArrow.png";
@@ -16,14 +16,14 @@ function AssetsLanding(props) {
     return (
       <>
         {screenSize === "xs" || screenSize === "sm" ? (
-          <div className='MOPsection'>
-            <p className="marine">OUR ASSETS</p> <br/>
-          <p className="smallRaleway">
+          <div className='MOPsectionM'>
+            <p className="marineM">OUR ASSETS</p> <br/>
+          <p className="smallRobotoM">
             people, experience and a little bit of code.
           </p><br/><br/>
           
           
-            <Carousel value={value} plugins={['dots']}>
+            <Carousel plugins={['arrows']}>
               <img className='carousel' src={placeholderpic} />
               <img className='carousel' src={placeholderpic} />
               <img className='carousel' src={placeholderpic} />
@@ -37,8 +37,8 @@ function AssetsLanding(props) {
             <br/><br/> <br/><br/> <br/><br/>
           <div className="flex flex-col place-items-center">
             <img src={esg} className='esg' /><br/><br/><br/><br/>
-          <p className='smallRoboto'>
-            Join our weekly newsletter to hear the latest developments <br/> on sustainability in shipping.
+          <p className='smallRobotoM'>
+            Join our weekly newsletter to hear<br/> the latest developments on<br/> sustainability in shipping.
           </p><br/>
           <div class='passwordContainer'>
             <input className='inputPW'  placeholder='' value='Your email here' />
@@ -94,7 +94,7 @@ function AssetsLanding(props) {
           </div><br/><br/><br/><br/><br/>
           <div className="flex flex-col place-items-center">
             <img src={esg} className='esg' /><br/><br/><br/><br/>
-          <p className='smallRoboto'>
+          <p className='mdRoboto'>
             Join our weekly newsletter to hear the latest developments <br/> on sustainability in shipping.
           </p><br/>
           <div class='passwordContainer'>

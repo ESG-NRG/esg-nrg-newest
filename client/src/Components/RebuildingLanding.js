@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import useScreenSize from "./useScreenSize";
 import babysprout from "../images/babysprout.png";
-
+import paragraph from "../images/sproutsFriend.png";
 
 function RebuildingLanding(props) {
   const screenSize = useScreenSize();
@@ -14,14 +14,17 @@ function RebuildingLanding(props) {
             <img className="sproutM" src={babysprout} alt="baby tree sprout" />
             </div>
         <div className="flex flex-row my-10">
-            <div>
+            <div className='MOPsectionM'>
               <ul className="md:leading-normal list-outside">
                 <p className="marineM">REBUILD THE OCEAN + ENVIRONMENT</p> <br />
-                <p className="secondLine">
+                <p className="smallRobotoM">
                   with open, pragmatic guidance from your ESG Adviser
                 </p>
-                <br />
-                <li>
+                <br /><br />
+                <div>
+                  <img className='paragraphM' src={paragraph} />
+                </div> 
+                {/* <li>
                   Find offsets that are additional, traceable, verifiable,
                   performing and contributing to sustainable development.
                 </li>
@@ -32,8 +35,8 @@ function RebuildingLanding(props) {
                 <br />
                 <li>
                   Weigh the proclaimed project benefits against it's likely impact on the environment with market insights and research provided within the Marine Offset Platform (MOP).
-                </li>
-                <br />
+                </li> */}
+                <br /><br />
               </ul>
               <button className="buttonM" onClick>
                 DISCOVER NOW
@@ -44,27 +47,18 @@ function RebuildingLanding(props) {
         </div>
     ) : ( 
       <div className='MOPsection'>
-        <div className="flex flex-row my-10">
+        <div className="flex flex-row ">
             <div>
-              <ul className="md:leading-normal list-outside">
-                <p className="marine">REBUILD THE OCEAN + ENVIRONMENT</p> <br />
+              <ul >
+                <p className="marine">REBUILD THE OCEAN + <br />ENVIRONMENT</p> <br />
                 <p className="smallRaleway">
                   with open, pragmatic guidance from your ESG Adviser
                 </p>
-                <br />
-                <li>
-                  Find offsets that are additional, traceable, verifiable,
-                  performing and contributing to sustainable development.
-                </li>
-                <br />
-                <li>
-                  Filter across different carbon offset project types, developers, standards, price ranges, SDG goals and countries of origin.
-                </li>
-                <br />
-                <li>
-                  Weigh the proclaimed project benefits against it's likely impact on the environment with market insights and research provided within the Marine Offset Platform (MOP).
-                </li>
-                <br />
+                <br /><br />
+                <div>
+                  <img className='paragraph' src={paragraph} />
+                </div> 
+                <br /><br /><br /><br />
               </ul>
               <button className="button" onClick>
                 EXPLORE PROJECTS
@@ -74,7 +68,6 @@ function RebuildingLanding(props) {
               <img className="sprout" src={babysprout} alt="baby tree sprout" />
             </div>
           </div>
-            
         </div>
     )}
     </>
