@@ -152,7 +152,7 @@ ul {
 }
 
 .paragraph {
-  width: 75%;
+  width: 65%;
 }
 
 .button {
@@ -259,6 +259,10 @@ ul {
 }
 
 .MOPsection {
+  margin: 8%;
+  max-height: 650px;;
+}
+.MOPsection2 {
   margin: 8%;
 }
 

@@ -47,9 +47,9 @@ function RebuildingLanding(props) {
         </div>
     ) : ( 
       <div className='MOPsection'>
-        <div className="flex flex-row ">
+        <div className="flex flex-row">
             <div>
-              <ul >
+            
                 <p className="marine">REBUILD THE OCEAN + <br />ENVIRONMENT</p> <br />
                 <p className="smallRaleway">
                   with open, pragmatic guidance from your ESG Adviser
@@ -58,8 +58,8 @@ function RebuildingLanding(props) {
                 <div>
                   <img className='paragraph' src={paragraph} />
                 </div> 
-                <br /><br /><br /><br />
-              </ul>
+                <br /><br />
+
               <button className="button" onClick>
                 EXPLORE PROJECTS
               </button>

@@ -48,7 +48,7 @@ function AssetsLanding(props) {
           </div>
         </div>
         ) : (
-          <div className='MOPsection'>
+          <div className='MOPsection2'>
             <p className="marine">OUR ASSETS</p> <br/>
           <p className="smallRaleway">
             people, experience and a little bit of code.
