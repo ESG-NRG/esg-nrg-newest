@@ -1,4 +1,4 @@
-import Carousel, {Dots} from '@brainhubeu/react-carousel';
+import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import React, { useState } from "react";
 import esg from '../images/esgnrg.png';
@@ -13,10 +13,6 @@ function AssetsLanding(props) {
   const [isOpen, setOpen] = useState(false)
     const [value, setValue] = useState(0);
   
-    const onChange = value => {
-    setValue(value);
-    }
-  
     return (
       <>
         {screenSize === "xs" || screenSize === "sm" ? (
@@ -27,7 +23,7 @@ function AssetsLanding(props) {
           </p><br/><br/>
           
           
-            <Carousel value={value} onChange={onChange} plugins={['dots']}>
+            <Carousel value={value} plugins={['dots']}>
               <img className='carousel' src={placeholderpic} />
               <img className='carousel' src={placeholderpic} />
               <img className='carousel' src={placeholderpic} />
@@ -36,15 +32,8 @@ function AssetsLanding(props) {
               <img className='carousel' src={placeholderpic} />
               <img className='carousel' src={placeholderpic} />
             </Carousel>
-            <Dots
-              value={this.state.value}
-              onChange={this.onChange}
-              thumbnails={[
-                (<img key={1}   />),
-                ...
-                (<img key={12}  />),
-              ]}
-            />
+        
+        
             <br/><br/> <br/><br/> <br/><br/>
           <div className="flex flex-col place-items-center">
             <img src={esg} className='esg' /><br/><br/><br/><br/>
