@@ -5,6 +5,7 @@ import esg from '../images/esgnrg.png';
 import placeholderpic from "../images/placeholderpic.png";
 import arrow from "../images/subscriptionArrow.png";
 import useScreenSize from "./useScreenSize";
+import CarouselDots from '/Users/steph/Desktop/ESG-NRG/node_modules/react-carousel/src/CarouselDots.js'
 
 
 
@@ -32,6 +33,7 @@ function AssetsLanding(props) {
               <img className='carousel' src={placeholderpic} />
               <img className='carousel' src={placeholderpic} />
             </Carousel>
+            {/* <CarouselDots value={this.state.value} onChange={this.onchange} number={this.state.slides.length} /> */}
         
         
             <br/><br/> <br/><br/> <br/><br/>
