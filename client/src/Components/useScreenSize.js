@@ -16,7 +16,7 @@ function getScreenSize() {
   //     return "2xl";
   //   }
   for (let screenSize of screenSizes) {
-    console.log(screenSize);
+    // console.log(screenSize);
     if (matchMedia(`(max-width: ${screens[screenSize]})`).matches) {
       return screenSize;
     }

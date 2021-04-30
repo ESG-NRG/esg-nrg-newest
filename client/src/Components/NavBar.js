@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Link, Switch, Route } from "react-router-dom";
 import useScreenSize from "./useScreenSize";
 import {slide as Menu} from 'react-burger-menu'
@@ -9,23 +9,40 @@ import logo from '../images/logo.png'
 function NavBar(props) {
   const screenSize = useScreenSize();
   const [isOpen, setOpen] = useState(false)
+
+  const [scroll, setScroll] = useState(0)
+
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      const scrollCheck = window.scrollY < 100
+      if (scrollCheck !== scroll) {
+        setScroll(scrollCheck)
+        console.log(scroll)
+      }
+    })
+  })
+
+
   return (
     <>
       {screenSize === "xs" || screenSize === "sm" ? (
        
     //hamburger
-        <Menu right>
-        <div className="p-menu1">
+        <menu right>
+        <div className={scroll ? "p-menuScroll" : "p-menu1"}>
         <nav id="navbar" className="navigation" role="navigation">
+          <div class="flex flex-row justify-between self-center" >
+        <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a>
           <input id="toggle1" type="checkbox" />
           <label className="hamburger1" for="toggle1">
             <div className="top"></div>
             <div className="meat"></div>
             <div className="bottom"></div>
           </label>
+          </div>
         
           <nav className="menu1">
-            <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a>
+            {/* <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a> */}
             <a id="about-us" className="menu-item" href="/about-us">ABOUT US</a>
             <a id="faqs" className="menu-item" href="/faq">FAQS</a>
             <a id="projects" className="menu-item" href="/projects">PROJECTS</a>
@@ -36,12 +53,12 @@ function NavBar(props) {
           </nav>
       </nav>
     </div>
-        </Menu>
+        </menu>
    
    
       ) : (
-       
-        <div className="wideNav">
+     
+        <div className={scroll ? "wideNav" : "wideNavScroll"}>
         <nav className="py-4 flex space-x-8 ">
           <div className="flex space-x-6">
           <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a>
@@ -58,6 +75,7 @@ function NavBar(props) {
           </div>
         </nav>
       </div>
+
   
       )}
 
