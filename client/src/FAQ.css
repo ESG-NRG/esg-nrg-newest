@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.faqHeading {
+  padding-top: 82px;
+  max-width: 950px;
+  margin: auto;
+}
+
+h1 {
+  font-family: Raleway;
+  font-size: 40px;
+  line-height: 47px;
+  font-weight: 700;
+  color: #43aa87;
+}
+
+.faqDescr {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 950px;
+  margin: auto;
+}
+
+.openArrow:hover {
+  cursor: pointer;
+}
+.questionRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  height: 85px;
+  /* background: #ffffff;
+  border: 1px solid #cbc9c9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px #cbc9c9;
+  border-radius: 24px; */
+  padding-left: 15px;
+  padding-right: 12px;
+}
+
+.outerFrame {
+  background: #ffffff;
+  border: 1px solid #cbc9c9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px #cbc9c9;
+  border-radius: 24px;
+  padding-bottom: 15px;
+}
+
+.question {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.answer {
+  margin-top: 30px;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+li {
+  margin-top: 10px;
+  width: 100%;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 4px;
+}
+
+ul {
+  padding-top: 15px;
+  margin-left: 40px;
+  max-width: 900px;
+  list-style-type: disc;
+  padding-left: 15px;
+}
+
+/* li {
+  border: 2px dashed purple;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+} */

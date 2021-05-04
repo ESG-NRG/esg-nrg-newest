@@ -70,28 +70,57 @@ a {
 
 /* Menu */
 
-.wideNav {
+.outerWideNav {
   position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  min-width: 675px;
   z-index: 100;
-  /* position: -webkit-sticky;
-  position: sticky;
-  top: 0; */
+  width: 100%;
+  transition: background-color 0.5s ease;
+  background-color: none;
+  display: flex;
+  justify-content: center;
 }
 
-.wideNavScroll {
+.outerWideNavScroll {
   position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  min-width: 675px;
   z-index: 100;
-  background-color: violet;
-  /* position: -webkit-sticky;
-  position: sticky;
-  top: 0; */
+  width: 100%;
+  transition: background-color 0.5s ease;
+  background-color: white;
+  display: flex;
+  justify-content: center;
 }
+
+.wideNav {
+  width: 950px;
+}
+
+.innerWideNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftWideNav {
+  flex-grow: 2;
+}
+
+.centerWideNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-grow: 7;
+}
+
+.rightWideNav {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-grow: 2;
+}
+
+/* .wideNavScroll {
+  width: 950px;
+  border: 1px solid black;
+} */
 
 .menu1 {
   width: 100%;
@@ -150,7 +179,6 @@ body {
   font-style: bold;
   width: 784px;
   height: 94px;
-  line-height: 46.96px;
 }
 
 .heroSmall {
@@ -169,6 +197,7 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   font-family: "Raleway";
+  border: 1px solid red;
 }
 
 .marine {
@@ -184,6 +213,7 @@ body {
 
 ul {
   width: 100%;
+  list-style-type: none;
 }
 
 .paragraph {
@@ -202,6 +232,10 @@ ul {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
 }
+
+/* .bg-local {
+  position: absolute;
+} */
 
 .secondLine {
   font-family: "Raleway";
@@ -359,7 +393,7 @@ ul {
   margin-bottom: 3%;
 }
 
-.footer li {
+.footerM li {
   list-style: none;
   color: white;
 }

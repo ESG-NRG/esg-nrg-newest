@@ -2,8 +2,9 @@ import React, {useState, useEffect} from "react";
 import { Link, Switch, Route } from "react-router-dom";
 import useScreenSize from "./useScreenSize";
 import {slide as Menu} from 'react-burger-menu'
-import Login from "./Login";
-import Signup from "./SignUp";
+// import faq from "./FAQ"
+// import Login from "./Login";
+// import Signup from "./SignUp";
 import logo from '../images/logo.png'
 
 function NavBar(props) {
@@ -11,6 +12,8 @@ function NavBar(props) {
   const [isOpen, setOpen] = useState(false)
 
   const [scroll, setScroll] = useState(0)
+
+
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
@@ -57,23 +60,26 @@ function NavBar(props) {
    
    
       ) : (
-     
-        <div className={scroll ? "wideNav" : "wideNavScroll"}>
-        <nav className="py-4 flex space-x-8 ">
-          <div className="flex space-x-6">
-          <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a>
+        <div className={scroll ? "outerWideNav" : "outerWideNavScroll"}>
+        <div className="wideNav">
+        <nav className="innerWideNav">
+          <div className="leftWideNav">
+          <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a></div>
+          <div className="centerWideNav">
             <Link to="/about-us">ABOUT US</Link>
             <Link to="/faq">FAQS</Link>
             <Link to="/projects">PROJECTS</Link>
             <Link to="/our-impact">OUR IMPACT</Link>
             <Link to="/contact-us">CONTACT US</Link>
-          </div>
+            </div>
+          
 
-          <div className="flex flex-row-reverse space-x-1 space-x-reverse">
+          <div className="rightWideNav">
             <Link to="/signup">Register</Link>
             <Link to="/login">Sign In | </Link>
           </div>
         </nav>
+      </div>
       </div>
 
   
