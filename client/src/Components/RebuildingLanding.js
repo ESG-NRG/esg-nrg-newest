@@ -15,7 +15,7 @@ function RebuildingLanding(props) {
             </div>
         <div className="flex flex-row my-10">
             <div className='MOPsectionM'>
-              <ul className="md:leading-normal list-outside">
+              <ul >
                 <p className="marineM">REBUILD THE OCEAN + ENVIRONMENT</p> <br />
                 <p className="smallRobotoM">
                   with open, pragmatic guidance from your ESG Adviser
@@ -24,18 +24,6 @@ function RebuildingLanding(props) {
                 <div>
                   <img className='paragraphM' src={paragraph} />
                 </div> 
-                {/* <li>
-                  Find offsets that are additional, traceable, verifiable,
-                  performing and contributing to sustainable development.
-                </li>
-                <br />
-                <li>
-                  Filter across different carbon offset project types, developers, standards, price ranges, SDG goals and countries of origin.
-                </li>
-                <br />
-                <li>
-                  Weigh the proclaimed project benefits against it's likely impact on the environment with market insights and research provided within the Marine Offset Platform (MOP).
-                </li> */}
                 <br /><br />
               </ul>
               <button className="buttonM" onClick>

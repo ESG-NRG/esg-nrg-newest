@@ -47,8 +47,8 @@ function Footer() {
         </div>
                    
                 ) : (
-                <div className='footer' style={{background:`linear-gradient(to bottom,  ${top} 80%,${bottom} 100%)`}}>
-                        <ul className='py-4 flex space-x-10'>
+                <div style={{background:`linear-gradient(to bottom,  ${top} 80%,${bottom} 100%)`}}>
+                        <ul id='footer' className='py-4 flex space-x-10' >
                             <li className='smallRoboto'><a href="/about-us">About</a></li>
                             <li className='smallRoboto'><a href="/faq">FAQ</a></li>
                             <li className='smallRoboto'><a href="/projects">Projects</a></li>
