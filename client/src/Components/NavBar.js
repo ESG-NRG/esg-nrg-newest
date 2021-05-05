@@ -6,7 +6,7 @@ import {slide as Menu} from 'react-burger-menu'
 // import Login from "./Login";
 // import Signup from "./SignUp";
 import logo from '../images/logo.png'
-
+import "../index.css";
 function NavBar(props) {
   const screenSize = useScreenSize();
   const [isOpen, setOpen] = useState(false)

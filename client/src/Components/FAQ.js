@@ -39,7 +39,7 @@ function FAQ(props) {
         <NavBar />
       </div>
       <div className="faqHeading">
-        <h1>Frequently Asked Questions</h1>
+        <h1 class="heading">Frequently Asked Questions</h1>
         <p className="faqDescr">
           Learn more about ESG-NRG and the work we do everyday to improve our
           climate across the globe and enable shipping companies to compensate
