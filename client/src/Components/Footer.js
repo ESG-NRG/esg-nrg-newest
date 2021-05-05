@@ -47,16 +47,19 @@ function Footer() {
         </div>
                    
                 ) : (
-                <div className='footer' style={{background:`linear-gradient(to bottom,  ${top} 80%,${bottom} 100%)`}}>
-                        <ul className='py-4 flex space-x-10'>
-                            <li className='smallRoboto'><a href="/about-us">About</a></li>
-                            <li className='smallRoboto'><a href="/faq">FAQ</a></li>
-                            <li className='smallRoboto'><a href="/projects">Projects</a></li>
-                            <li><a href='/'><img className='footerLogoTopM' src={footerLogo} alt='esg-nrg logo' /></a></li>
-                            <li className='smallRoboto'><a href="/our-impact">Our Impact</a></li>
-                            <li className='smallRoboto'><a href="/contact-us">Contact Us</a></li>
-                            <li className='smallRoboto'><a href="/legal">Legal</a></li>
-                        </ul>
+                <div style={{background:`linear-gradient(to bottom,  ${top} 60%,${bottom} 100%)`}}>
+                        <div className= 'footer' >
+                            <ul className='flex flex-row' style={{listStyleType:'none'}} >
+                                <li className='smallRoboto'><a href="/about-us">About</a></li>
+                                <li className='smallRoboto'><a href="/faq">FAQ</a></li>
+                                <li className='smallRoboto'><a href="/projects">Projects</a></li>
+                                <li><a href='/'><img style={{margin:'5%'}} className='footerLogoTop' src={footerLogo} alt='esg-nrg logo' /></a></li>
+                                <li className='smallRoboto'><a href="/our-impact">Our Impact</a></li>
+                                <li className='smallRoboto'><a href="/contact-us">Contact Us</a></li>
+                                <li className='smallRoboto'><a href="/legal">Legal</a></li>
+                            </ul>
+                        </div>
+                        
                                 
                                 <hr style={{margin: '75px'}}></hr>
                             <div className='alignFooter'>

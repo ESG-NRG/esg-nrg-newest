@@ -201,7 +201,6 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   font-family: "Raleway";
-  border: 1px solid red;
 }
 
 .marine {
@@ -242,10 +241,6 @@ li {
   font-size: 15px;
 }
 
-/* .bg-local {
-  position: absolute;
-} */
-
 .secondLine {
   font-family: "Raleway";
   font-style: regular;
@@ -270,6 +265,7 @@ li {
   font-size: 18px;
   line-height: 21.09px;
   text-align: center;
+
 }
 .smallerTitles {
   font-size: 32px;
@@ -402,22 +398,36 @@ li {
   margin-bottom: 3%;
 }
 
-.footerM li {
-  list-style: none;
+.footer li {
   color: white;
+  list-style: none;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+} 
+
+.footer {
+  color: white;
+  list-style: none;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
+
 .footerLogoTop {
-  width: 90px;
+  width: 50px;
 }
 
 .footerLogo {
   width: 44px;
 }
 
+
 .alignFooter {
   display: flex;
   justify-content: space-evenly;
+ 
 }
 
 .copyright {
