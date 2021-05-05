@@ -5,19 +5,8 @@
 }
 
 /* /////////////HeroLanding/////////////// */
-.heroM {
-  color: white;
-  font-size: 20px;
-  font-weight: 1000;
-  /* line-height: 46.96px; */
-  font-family: "Raleway";
-  font-style: bold;
-  /* width: 784px; */
-  /* height: 94px; */
-  /* line-height: 32.87px; */
-}
 
-.heroSmallM {
+/* .heroSmallM {
   color: white;
   font-size: 14px;
   font-family: "Raleway";
@@ -33,10 +22,6 @@
   transform: translate(-50%, -50%);
 }
 
-.herozM {
-  /* border-bottom-right-radius: 50px; */
-}
-
 .buttonM {
   border: 2px solid #d64933;
   background-color: #d64933;
@@ -48,7 +33,7 @@
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 15px;
-}
+} */
 
 /* /////////MARINELANDING///////// */
 .marineM {

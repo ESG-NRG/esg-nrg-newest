@@ -15,7 +15,7 @@ function RebuildingLanding(props) {
             </div>
         <div className="flex flex-row my-10">
             <div className='MOPsectionM'>
-              <ul >
+             
                 <p className="marineM">REBUILD THE OCEAN + ENVIRONMENT</p> <br />
                 <p className="smallRobotoM">
                   with open, pragmatic guidance from your ESG Adviser
@@ -25,7 +25,7 @@ function RebuildingLanding(props) {
                   <img className='paragraphM' src={paragraph} />
                 </div> 
                 <br /><br />
-              </ul>
+            
               <button className="buttonM" onClick>
                 DISCOVER NOW
               </button>

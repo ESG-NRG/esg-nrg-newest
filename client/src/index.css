@@ -389,22 +389,25 @@ ul {
   margin-bottom: 3%;
 }
 
-#footer li {
+.footer li {
   color: white;
   list-style: none;
   margin: auto;
   display: flex;
   justify-content: center;
+} 
 
-}
-
-.footerM li {
-  list-style: none;
+.footer {
   color: white;
+  list-style: none;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
+
 
 .footerLogoTop {
-  width: 90px;
+  width: 50px;
 }
 
 .footerLogo {

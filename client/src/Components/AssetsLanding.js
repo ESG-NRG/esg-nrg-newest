@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-import esg from '../images/esgnrg.png';
 import placeholderpic from "../images/placeholderpic.png";
 import arrow from "../images/subscriptionArrow.png";
 import useScreenSize from "./useScreenSize";
@@ -38,7 +37,7 @@ function AssetsLanding(props) {
         
             <br/><br/> <br/><br/> <br/><br/>
           <div className="flex flex-col place-items-center">
-            <img src={esg} className='esg' /><br/><br/><br/><br/>
+            
           <p className='smallRobotoM'>
             Join our weekly newsletter to hear<br/> the latest developments on<br/> sustainability in shipping.
           </p><br/>
@@ -95,7 +94,7 @@ function AssetsLanding(props) {
             </div>
           </div><br/><br/><br/><br/><br/>
           <div className="flex flex-col place-items-center">
-            <img src={esg} className='esg' /><br/><br/><br/><br/>
+            
           <p className='mdRoboto'>
             Join our weekly newsletter to hear the latest developments <br/> on sustainability in shipping.
           </p><br/>
