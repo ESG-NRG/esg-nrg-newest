@@ -4,11 +4,8 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import placeholderpic from "../images/placeholderpic.png";
 import arrow from "../images/subscriptionArrow.png";
 import useScreenSize from "./useScreenSize";
-<<<<<<< HEAD
-=======
 
 
->>>>>>> ea3ba12f2d334566f4c6b3953cd9efd4ca6d98ee
 
 
 function AssetsLanding(props) {
