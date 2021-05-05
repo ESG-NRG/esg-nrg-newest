@@ -5,8 +5,6 @@ import esg from '../images/esgnrg.png';
 import placeholderpic from "../images/placeholderpic.png";
 import arrow from "../images/subscriptionArrow.png";
 import useScreenSize from "./useScreenSize";
-// import CarouselDots from '/Users/steph/Desktop/ESG-NRG/node_modules/react-carousel/src/CarouselDots.js'
-
 
 
 function AssetsLanding(props) {
