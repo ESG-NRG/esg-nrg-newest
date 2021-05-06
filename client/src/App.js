@@ -17,7 +17,6 @@ function App() {
     <div className='App'>
       
         <TheContext.Provider value={{ history, user, setUser }}>
-          {/* <NavBar /> */}
           <Switch>
             <Route exact path="/" render={(props) => <LandingPage {...props} />} />
             <Route exact path="/signup" render={(props) => <SignUp />} />
@@ -25,7 +24,6 @@ function App() {
             <Route exact path="/profile" render={(props) => <Profile {...props} />} />
             <Route exact path="/faq" render={(props) => <FAQ {...props} />} />
           </Switch>
-          {/* <FAQ /> */}
           <Footer />
         </TheContext.Provider>
      

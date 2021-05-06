@@ -5,9 +5,6 @@ import placeholderpic from "../images/placeholderpic.png";
 import arrow from "../images/subscriptionArrow.png";
 import useScreenSize from "./useScreenSize";
 
-
-
-
 function AssetsLanding(props) {
   const screenSize = useScreenSize();
   const [isOpen, setOpen] = useState(false)

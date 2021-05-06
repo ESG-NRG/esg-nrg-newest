@@ -8,18 +8,92 @@ a {
   text-decoration: none;
 }
 
-.p-menu1 {
+/* ///////////////////try this stuff out might be missing from burger menu css 
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
   height: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+/* ///////////////////end of try this stuff out
+
+.p-menu1 {
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  top: 10;
+}
+
+.testThisShit {
+  border: 2px solid purple;
 }
 
 .p-menuScroll {
-  height: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  top: 10;
   background-color: white;
 }
 
@@ -66,6 +140,8 @@ a {
 
 #toggle1:checked ~ .menu1 {
   height: 340px;
+  z-index: 100;
+  border: 2px solid red;
 }
 
 /* Menu */
@@ -96,6 +172,8 @@ a {
 
 .wideNav {
   width: 950px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .innerWideNav {
@@ -127,7 +205,7 @@ a {
 } */
 
 .menu1 {
-  width: 100%;
+  width: 20%;
   background-color: white;
   margin: 10px;
   display: -ms-grid;
@@ -142,7 +220,7 @@ a {
   height: 0px;
   overflow: hidden;
   transition: height 0.4s ease;
-  z-index: 120;
+  z-index: 500;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -265,7 +343,6 @@ li {
   font-size: 18px;
   line-height: 21.09px;
   text-align: center;
-
 }
 .smallerTitles {
   font-size: 32px;
@@ -404,7 +481,7 @@ li {
   margin: auto;
   display: flex;
   justify-content: center;
-} 
+}
 
 .footer {
   color: white;
@@ -414,7 +491,6 @@ li {
   justify-content: center;
 }
 
-
 .footerLogoTop {
   width: 50px;
 }
@@ -423,11 +499,9 @@ li {
   width: 44px;
 }
 
-
 .alignFooter {
   display: flex;
   justify-content: space-evenly;
- 
 }
 
 .copyright {

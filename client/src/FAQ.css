@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.theWholeEnchilada {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 .faqHeading {
   padding-top: 82px;
+  padding-left: 2%;
+  padding-right: 2%;
   max-width: 950px;
   margin: auto;
 }
@@ -30,6 +37,8 @@ section {
   padding-bottom: 20px;
   max-width: 950px;
   margin: auto;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .openArrow:hover {
