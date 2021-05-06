@@ -29,12 +29,12 @@ function NavBar(props) {
     <>
       {screenSize === "xs" || screenSize === "sm" ? (
         //hamburger
-
-        <Menu right >
-        <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
-        <a id="about-us" className="menu-item" href="/about-us">
+        <div className={scroll ? "burgerLogoNavBar" : "burgerLogoNavBarScroll"}>
+      <a href='/'><img className='burgerNavbarLogo'  src={logo} alt='esg-nrg logo' /></a>
+        <Menu right>
+          <a href='/'><img className='logo' class="burgerLogo" src={logo} width={"50px"} height={"50px"} alt='esg-nrg logo' /></a>
+        <a id="home" className="menu-item" href="/">HOME</a>
+                <a id="about-us" className="menu-item" href="/about-us">
                   ABOUT US
                 </a>
                 <a id="faqs" className="menu-item" href="/faq">
@@ -49,14 +49,17 @@ function NavBar(props) {
                 <a id="contact-us" className="menu-item" href="/contact-us">
                   CONTACT US
                 </a>
-                <a id="register" className="menu-item" href="/signup">
-                  Register
-                </a>
                 <a id="login" className="menu-item" href="/login">
                   Sign In
                 </a>
+                <a id="register" className="menu-item" href="/signup">
+                  Register
+                </a>
+                
         {/* <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a> */}
       </Menu>
+
+      </div>
         // <Menu right>
         //   <div className={!scroll ? "p-menuScroll" : "p-menu1"}>
         //     <nav id="navbar" className="navigation" role="navigation">
