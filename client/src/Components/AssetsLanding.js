@@ -18,9 +18,9 @@ function AssetsLanding(props) {
         {screenSize === "xs" || screenSize === "sm" ? (
           <div className='MOPsectionM'>
             <p className="marineM">OUR ASSETS</p> <br/>
-          <p className="smallRobotoM">
+            <p className="smallRobotoM">
             people, experience and a little bit of code.
-          </p><br/><br/>
+            </p><br/><br/>
           
           
             <Carousel plugins={['arrows']}>
@@ -36,18 +36,17 @@ function AssetsLanding(props) {
         
         
             <br/><br/> <br/><br/> <br/><br/>
-          <div className="flex flex-col place-items-center">
-            
-          <p className='smallRobotoM'>
-            Join our weekly newsletter to hear<br/> the latest developments on<br/> sustainability in shipping.
-          </p><br/>
-          <div class='passwordContainer'>
-            <input className='inputPW'  placeholder='' value='Your email here' />
-            <img src={arrow} id="passwordView" />
+            <div className="flex flex-col place-items-center">
+              
+              <p className='smallRobotoM'>
+                Join our weekly newsletter to hear<br/> the latest developments on<br/> sustainability in shipping.
+              </p><br/>
+                <div class='passwordContainer'>
+                  <input className='inputPW'  placeholder='' value='Your email here' />
+                  <img src={arrow} id="passwordView" />
+                </div>
+            </div>
           </div>
-
-          </div>
-        </div>
         ) : (
           <div className='MOPsection2'>
             <p className="marine">OUR ASSETS</p> <br/>
