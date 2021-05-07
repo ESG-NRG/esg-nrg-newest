@@ -29,12 +29,21 @@ function NavBar(props) {
     <>
       {screenSize === "xs" || screenSize === "sm" ? (
         //hamburger
+<<<<<<< HEAD
+
+        <Menu right>
+        <a id="home" className="menu-item" href="/">Home</a>
+        <a id="about" className="menu-item" href="/about">About</a>
+        <a id="contact" className="menu-item" href="/contact">Contact</a>
+        <a id="about-us" className="menu-item" href="/about-us">
+=======
         <div className={scroll ? "burgerLogoNavBar" : "burgerLogoNavBarScroll"}>
       <a href='/'><img className='burgerNavbarLogo'  src={logo} alt='esg-nrg logo' /></a>
         <Menu right>
           <a href='/'><img className='logo' class="burgerLogo" src={logo} width={"50px"} height={"50px"} alt='esg-nrg logo' /></a>
         <a id="home" className="menu-item" href="/">HOME</a>
                 <a id="about-us" className="menu-item" href="/about-us">
+>>>>>>> 2b3a72f7f29e00ffaccd64422c3e30b6a787923a
                   ABOUT US
                 </a>
                 <a id="faqs" className="menu-item" href="/faq">
