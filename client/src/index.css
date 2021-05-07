@@ -31,7 +31,6 @@ a {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  border: 1px solid red;
   height: 45px;
   width: 45px;
 }
@@ -552,10 +551,10 @@ li {
 }
 
 #passwordView {
-  width: 18px;
-  height: 12px;
+  width: 50px;
+  height: 52px;
   position: absolute;
-  right: 10px;
+  right: -50px;
   top: 11px;
-  z-index: 20;
+  z-index: 2000;
 }
