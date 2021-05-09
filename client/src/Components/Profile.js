@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function Profile(props) {
   console.log(props)
-  return <div>This is profile page
+  return <div>WELCOME Profile Page
   <form>
     <button type="submit">Log Out</button>
     </form>
