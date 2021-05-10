@@ -27,10 +27,77 @@
     color: rgb(98, 98, 233);
 }
 
-.midLogo {
+.midLogoM {
     width: 180px;
     margin: auto;
 }
 
 
 /* ////////////Desktop////////////////// */
+.heroAboutUs {
+    background-image: auto;
+}
+
+body {
+    /* margin: 50px; */
+    margin: 0;
+}
+
+.marine {
+    color: #43aa87;
+    font-style: bold;
+    font-size: 40px;
+    font-family: "Raleway";
+    font-weight: 700;
+    line-height: 46.96px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.smallRaleway {
+    font-family: "Raleway";
+    /* font-weight: 400; */
+    font-style: normal;
+    font-size: 28px;
+    line-height: 32.87px;
+}
+
+.smallRoboto {
+    font-family: "Roboto";
+    /* font-weight: 400; */
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28.13px;
+    text-align: center;
+}
+
+.paragraph1 {
+    width: 95%;
+}
+
+.paragraph2 {
+    width: 85%;
+}
+
+.paragraph3 {
+    width: 85%;
+}
+
+.paragraph4 {
+    width: 85%;
+}
+
+.MOPsection {
+    margin: 8%;
+    max-height: 650px;
+}
+  
+.midLogoM {
+    width: 301px;
+    margin: auto;
+}
+
+.globalmap {
+    width: 85%;
+    margin: auto;
+}

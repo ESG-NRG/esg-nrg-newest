@@ -2,20 +2,28 @@ import React, {useState} from 'react';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import useScreenSize from "./useScreenSize";
+// import NavBar from "./NavBar"
 import globe from '../images/aboutUsGlobal.png'
 import hero from '../images/aboutUsHero.png'
 import logo from '../images/aboutUsLogo.png'
+import par1 from '../images/AboutUsParagraph1.png'
+import par2 from '../images/AboutUsParagraph2.png'
+import par3 from '../images/AboutUsParagraph3.png'
+import par4 from '../images/AboutUsParagraph4.png'
 import '../AboutUs.css'
+
+
 function AboutUs(props) {
     const screenSize = useScreenSize();
     const [isOpen, setOpen] = useState(false)
     // const [value, setValue] = useState(0)
 
     return (
+        
         <>
+        
         {screenSize === "xs" || screenSize === "sm" ? (
             <div>
-                MOBILE
                 <div className="bg-local ">
                     <img src={hero} alt="hero pic" />
                 </div>
@@ -45,7 +53,7 @@ function AboutUs(props) {
                     </p>
                 </div><br />
                         <div>
-                            <img src={logo} className='midLogo' alt='esg-nrg logo'/>
+                            <img src={logo} className='midLogoM' alt='esg-nrg logo'/>
                         </div><br />
                 <div className='MOPsectionM'>
                     <p className="marineM">OUR STORY</p> <br />
@@ -85,7 +93,63 @@ function AboutUs(props) {
             </div>
         ) : (
             <div>
-            DESKTOP
+                <div className="bg-local">
+                    <img className='heroAboutUs' src={hero} alt="hero pic" />
+                </div>
+                <div className='MOPsection'>
+                    <p className="marine">OUR MISSION</p> <br /><br />
+                    <p className="smallRaleway">
+                        Put a price on carbon and maximise shipping's positive impact on the <br />planet.
+                    </p><br /><br />
+                    <img className='paragraph1' src={par1} />
+                    <br />
+                </div>
+                <div className='MOPsection'>
+                    <p className="marine">WHAT IS ESG-NRG?</p> <br /><br />
+                    <p className="smallRaleway">
+                    The energy created by making decisions above the bottom line. 
+                    </p><br /><br />
+                    <div className="flex flex-row">
+                        <div>
+                            <br />
+                            <div>
+                            <img className='paragraph2' src={par2} />
+                            </div> 
+                            <br /><br />
+                        </div>
+                        <div><br /><br /><br />
+                        <img src={logo} className='midLogo' alt='esg-nrg logo'/>
+                        </div>
+                    </div>
+                </div><br />
+                    
+                <div className='MOPsection'>
+                    <p className="marine">OUR STORY</p> <br /><br />
+                    <p className="smallRaleway">
+                        A perfect storm in a rising ‘green’ tide.
+                    </p><br /><br />
+                    <img className='paragraph3' src={par3} />
+              
+                </div>
+
+                <div className='MOPsection'>
+                    <p className="marine">OUR LOCATIONS</p> <br /><br />
+                    <p className="smallRaleway">
+                            Emissions know no borders.
+                    </p><br /><br />
+                    <img className='paragraph4'src={par4} />
+                </div>
+                <div>
+                    <img className='globalmap' src={globe} alt='global map' />
+                </div>
+
+                <div className='MOPsection'>
+                    <p className="marine">OUR ASSETS</p> <br /><br />
+                    <p className="smallRaleway">
+                        People, experience and a little bit of code.
+                    </p>
+                    {/* ALL PICTURES WITH TEXT */}
+                </div>
             </div>
         )}
         
