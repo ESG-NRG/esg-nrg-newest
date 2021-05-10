@@ -11,6 +11,7 @@ import par2 from '../images/AboutUsParagraph2.png'
 import par3 from '../images/AboutUsParagraph3.png'
 import par4 from '../images/AboutUsParagraph4.png'
 import '../AboutUs.css'
+import AssetsProfiles from './AssetsProfiles'
 
 
 function AboutUs(props) {
@@ -149,6 +150,7 @@ function AboutUs(props) {
                         People, experience and a little bit of code.
                     </p>
                     {/* ALL PICTURES WITH TEXT */}
+                    <AssetsProfiles />
                 </div>
             </div>
         )}
