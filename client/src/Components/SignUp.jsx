@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import useScreenSize from "./useScreenSize";
@@ -9,9 +10,22 @@ import xIcon from "../images/xIcon.png";
 import pwView from "../images/IconArtwork.png";
 import Login from "./Login";
 import "../signUpIn.css";
+import { backgroundColor } from "tailwindcss/defaultTheme";
 
 export default function Signup() {
   const { history, user, setUser } = useContext(TheContext);
+  const [viewPassword0, setViewPassword0] = useState(false);
+  const [viewPassword1, setViewPassword1] = useState(false);
+
+
+  const togglePasswordVisibility0 = () => {
+    setViewPassword0(viewPassword0 ? false : true)
+  };
+
+  const togglePasswordVisibility1 = () => {
+    setViewPassword1(viewPassword1 ? false : true)
+  };
+
   const [userData, setUserData] = useState({
     email: "",
     password: "",
@@ -41,21 +55,6 @@ export default function Signup() {
       [event.target.name]: event.target.value,
     });
   }
-
-  // const passwordView = (e) => {
-
-  //   console.log("vewPwType before ternary", viewPwType)
-  //     viewPwType[e] !== "password" ? viewPwType[e] = "password" : viewPwType[e] = "text"
-  // }
-
-  function passwordsView(e) {
-    console.log("vewPwType before ternary", viewPwType);
-    viewPwType[e] !== "password"
-      ? (viewPwType[e] = "password")
-      : (viewPwType[e] = "text");
-  }
-
-  let viewPwType = ["password", "password"];
 
   return (
     <>
@@ -161,27 +160,13 @@ export default function Signup() {
                 className="inputPW"
                 name="password"
                 id="firstPassword"
-                type={viewPwType[1]}
+                type={viewPassword0 ? "text" : "password"}
                 onChange={handleChange}
                 placeholder=""
                 value={userData.password}
               />
-              {/* <input
-                type="image"
-                name="passwordView1"
-                id="passwordView"
-                onclick={passwordsView(0)}
-                src={pwView}
-                alt="View Password"
-              ></input> */}
-              <button
-                type="button"
-                src={pwView}
-                id="passwordView"
-                onclick={passwordsView(0)}
-              ></button>
-              {/* <img src={pwView} id="passwordView" onclick={passwordsView(0)} alt="view password"></img> */}
-
+<img src={pwView} alt="view password" onClick={togglePasswordVisibility0} id="passwordView"></img>
+{/* <i onClick={togglePasswordVisibility0}>VIEW PASSWORD</i> */}
               <br />
               <br></br>
             </div>
@@ -195,35 +180,19 @@ export default function Signup() {
                 </p>
               )}
             </div>
-            {/* {userData.password === userData.password2 ? (
-              <input
-                className="hover:border-blue-500"
-                name="password2"
-                type="password"
-                onChange={handleChange}
-                placeholder=""
-                value={userData.password2}
-              />
-            ) : (
-              <input
-                className="borderBad hover:border-blue-500"
-                name="password2"
-                type="password"
-                onChange={handleChange}
-                placeholder=""
-                value={userData.password2}
-              />
-            )} */}
+
             <div class="passwordContainer">
               <input
                 className="inputPW"
                 name="password2"
-                type="password"
+                type={viewPassword1 ? "text" : "password"}
                 onChange={handleChange}
                 placeholder=""
                 value={userData.password2}
               />
-              <img src={pwView} id="passwordView"></img>
+              <img src={pwView} alt="view password" onClick={togglePasswordVisibility1} id="passwordView"></img>
+              {/* <i onClick={togglePasswordVisibility1}>VIEW PASSWORD</i> */}
+              
               <br />
               <br></br>
             </div>
@@ -241,6 +210,8 @@ export default function Signup() {
               Create your account
             </button> */}
           </form>
+
+
           <br></br>
           <p class={phone ? "termsMobile" : "terms"}>
             By creating an account, you agree to our Privacy Policy and our

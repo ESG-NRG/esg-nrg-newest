@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import useScreenSize from "./useScreenSize";
-// import NavBar from "./NavBar"
+import NavBar from "./NavBar"
 import globe from '../images/aboutUsGlobal.png'
 import hero from '../images/aboutUsHero.png'
 import logo from '../images/aboutUsLogo.png'
@@ -25,7 +25,10 @@ function AboutUs(props) {
     // const [value, setValue] = useState(0)
 
     return (
-        
+        <div>
+        <div>
+            <NavBar/>
+        </div>
         <>
         {screenSize === "xs" || screenSize === "sm" ? (
             <div>
@@ -266,8 +269,9 @@ function AboutUs(props) {
             </div>
         )}
         
-
+       
        </>
+       </div>
     );
 }
 

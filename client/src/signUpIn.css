@@ -158,6 +158,7 @@ input:hover {
   right: 10px;
   top: 11px;
   z-index: 20;
+  cursor: pointer;
 }
 
 /* .inputPW {
