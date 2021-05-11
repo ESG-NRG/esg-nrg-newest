@@ -94,6 +94,78 @@ function AboutUs(props) {
                         People, experience and a little bit of code.
                     </p>
                     {/* ALL PICTURES WITH TEXT */}
+                    <Carousel plugins={['arrows']}>
+                        <div className='outerFrameM'>
+                            <img style={{width:'100%'}} className='picsM' className='carousel' src={janek} /><br/>
+                    
+                                <p className='titleM'>Janek Ekeli - CEO</p><br/>
+                                <p className='aboutM'>Janek started his journey in Oslo, Norway. He studied Shipping Management at BI Norwegian Business School and holds an MSc in International Maritime Business from Southampton Solent University. He has experience working for a market-leading Norwegian shipowner and until recently, was trading bunkers (marine fuel) for a Danish oil trading house in Dubai and New York.<br/><br/><br/>
+                                <b>Email: jekeli@esg-nrg.com<br/></b> 
+                                <b>Phone: +47 9489 1870</b><br/>
+                                <a style={{color:'blue', textDecoration:'underline'}} href='https://www.linkedin.com/in/janek-ekeli-336953b3/'>Linkedin</a></p><br/>     
+                        </div>
+
+                        <div className='outerFrameM'>
+                            <img style={{width:'100%'}} className='carousel' src={arthur} /><br/>
+                    
+                                <p className='titleM'>Arthur Pinault - CXO</p><br/>
+                                <p className='aboutM'>Arthur started his journey in the south of France. He studied Criminal Justice at Miami Dade College and is a User Experience/User Interface graduate of Ironhack’s Miami bootcamp. He has experience in UX/UI design from a high-tech radio guide system provider and until recently, one of the world’s top-3 largest cruise lines.<br/><br/><br/>
+                                         <b>Email: apinault@esg-nrg.com<br/></b>   
+                                         <b>Phone: 305-988-2442<br/></b>   
+                                         <a style={{color:'blue', textDecoration:'underline'}} href='https://www.linkedin.com/in/apinault/'>Linkedin</a></p><br/>     
+                        </div>
+
+                        <div className='outerFrameM'>
+                            <img style={{width:'100%'}} className='carousel' src={janek} /><br/>
+                    
+                                <p className='titleM'>Jane Doe - CTO</p><br/>
+                                <p className='aboutM'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, curabitur eget feugiat tristique euismod. Donec cursus volutpat sed lacinia pulvinar. Felis, justo a, elit amet cras bibendum fermentum fusce. Pellentesque vel augue sit tincidunt.
+                                            <br/><br/><br/>
+                                            <b>Email: johndoe@esg-nrg.com<br/></b>  
+                                            <b>Phone: 399 999 9999<br/></b> 
+                                            <a style={{color:'blue', textDecoration:'underline'}} href='https://www.linkedin.com/in/stephanie--mitchell/'>Linkedin</a></p><br/>     
+                        </div>
+
+                        <div className='outerFrameM'>
+                            <img style={{width:'100%'}} className='carousel' src={dayan} /><br/>
+                    
+                                <p className='titleM'>Dayan Evora - UX/UI Designer</p><br/>
+                                <p className='aboutM'>Dayan started his journey in Cuba. Background in Graphic Design and Photography. Associates of Arts Degree from Miami Dade College.<br/><br/><br/>
+                                        <b>Email: devora@esg-nrg.com<br/></b>    
+                                        <a style={{color:'blue', textDecoration:'underline'}} href='https://www.linkedin.com/in/dayanevora/'>Linkedin</a></p><br/>     
+                        </div>
+                            HELLO
+                        <div className='outerFrameM'>
+                            <img style={{width:'100%'}} className='carousel' src={janek} /><br/>
+                    
+                                <p className='titleM'>Raul Doejo - UX/UI Designer</p><br/>
+                                <p className='aboutM'>Raul started his journey in Venezuela. 
+                                            Background in IT Sales, Banking, and Marketing. Bachelor's Degree in Business & Marketing from San Ignacio University.
+                                            <br/><br/><br/>
+                                            <b>Email: rdoejo@esg-nrg.com<br/></b>  
+                                            <a style={{color:'blue', textDecoration:'underline'}} href='https://www.linkedin.com/in/rauldoejod/'>Linkedin</a></p><br/>     
+                        </div>
+
+                        <div className='outerFrameM'>
+                            <img style={{width:'100%'}} className='carousel' src={steph} /><br/>
+                    
+                                <p className='titleM'>Stephanie Mitchell - Web Developer</p><br/>
+                                <p className='aboutM'>Stephanie started her journey in...
+                                            Stephanie started her journey in Miami. She studied Mechanical Engineering at Miami Dade College and is a Full-Stack Web Development graduate of Ironhack’s Miami Bootcamp. She comes from a background in retail and customer service management.<br/><br/><br/>
+                                            <b>Email: smitchell@esg-nrg.com,<br/></b> 
+                                            <a style={{color:'blue', textDecoration:'underline'}} href='https://www.linkedin.com/in/stephanie--mitchell/'>Linkedin</a></p><br/>
+                                                 
+                        </div>
+
+                        <div className='outerFrameM'>
+                            <img style={{width:'100%'}} className='carousel' src={greg} /><br/>
+                    
+                                <p className='titleM'>Greg King - Web Developer</p><br/>
+                                <p className='aboutM'>Greg started his journey in Central Pennsylvania. After a long and successful career in commercial flooring he turned a longtime hobby into a career in web development. He is a Full-Stack Web Development graduate of Ironhack’s Miami bootcamp. <br/><br/><br/>
+                                        <b>Email: gking@esg-nrg.com<br/></b>  
+                                            <a style={{color:'blue', textDecoration:'underline'}} href='https://www.linkedin.com/in/gregorykingwd/'>Linkedin</a></p><br/>     
+                        </div>
+                    </Carousel>
                 </div>
             </div>
         ) : (
@@ -205,7 +277,7 @@ function AboutUs(props) {
                             <div className='outerFrame'>
                                     <div className="flex flex-row">
                                         <div style={{margin:'auto'}}>
-                                            <p>Dayan Evora - UX/UI Designer </p><br/>
+                                            <p>Dayan Evora - UX/UI Designer</p><br/>
                                             <p>Dayan started his journey in Cuba. Background in Graphic Design and Photography. Associates of Arts Degree from Miami Dade College.<br/>
                                             Email: devora@esg-nrg.com<br/>
                                             Linkedin</p><br/>     

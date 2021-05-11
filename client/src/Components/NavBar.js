@@ -60,50 +60,6 @@ function NavBar(props) {
       </Menu>
 
       </div>
-        // <Menu right>
-        //   <div className={!scroll ? "p-menuScroll" : "p-menu1"}>
-        //     <nav id="navbar" className="navigation" role="navigation">
-        //       <div class="flex flex-row justify-between self-center items-center ">
-        //         <a href="/">
-        //           <img className="logo" src={logo} alt="esg-nrg logo" />
-        //         </a>
-        //         <div>
-        //         <input className="testThisShit" id="toggle1" type="checkbox" />
-        //         <label className="hamburger1" for="toggle1">
-        //           <div className="top"></div>
-        //           <div className="meat"></div>
-        //           <div className="bottom"></div>
-        //         </label>
-        //         </div>
-        //       </div>
-
-        //       <nav className="menu1">
-        //         {/* <a href='/'><img className='logo' src={logo} alt='esg-nrg logo' /></a> */}
-        //         <a id="about-us" className="menu-item" href="/about-us">
-        //           ABOUT US
-        //         </a>
-        //         <a id="faqs" className="menu-item" href="/faq">
-        //           FAQS
-        //         </a>
-        //         <a id="projects" className="menu-item" href="/projects">
-        //           PROJECTS
-        //         </a>
-        //         <a id="our-impact" className="menu-item" href="/our-impact">
-        //           OUR IMPACT
-        //         </a>
-        //         <a id="contact-us" className="menu-item" href="/contact-us">
-        //           CONTACT US
-        //         </a>
-        //         <a id="register" className="menu-item" href="/signup">
-        //           Register
-        //         </a>
-        //         <a id="login" className="menu-item" href="/login">
-        //           Sign In
-        //         </a>
-        //       </nav>
-        //     </nav>
-        //   </div>
-        // </Menu>
       ) : (
         <div className={scroll ? "outerWideNav" : "outerWideNavScroll"}>
           <div className="wideNav">
