@@ -46,6 +46,9 @@ function NavBar(props) {
                 <a id="our-impact" className="menu-item" href="/our-impact">
                   OUR IMPACT
                 </a>
+                <a id="ship-cards" className="menu-item" href="/ship-cards">
+                  SHIP CARDS
+                </a>
                 <a id="contact-us" className="menu-item" href="/contact-us">
                   CONTACT US
                 </a>
@@ -74,6 +77,7 @@ function NavBar(props) {
                 <Link to="/faq">FAQS</Link>
                 <Link to="/projects">PROJECTS</Link>
                 <Link to="/our-impact">OUR IMPACT</Link>
+                <Link to="/ship-cards">SHIP CARDS</Link>
                 <Link to="/contact-us">CONTACT US</Link>
               </div>
 

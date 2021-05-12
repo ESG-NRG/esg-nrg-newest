@@ -6,6 +6,7 @@ import Login from './Components/Login'
 import Profile from './Components/Profile'
 import FAQ from './Components/FAQ'
 import AboutUs from './Components/AboutUs'
+import ShipCards from './Components/ShipsCard'
 import TheContext from './TheContext'
 import LandingPage from './Components/LandingPage'
 import { Route, Switch, useHistory } from 'react-router-dom'
@@ -27,6 +28,7 @@ function App() {
             <Route exact path="/profile" render={(props) => <Profile {...props} />} />
             <Route exact path="/faq" render={(props) => <FAQ {...props} />} />
             <Route exact path="/about-us" render={(props) => <AboutUs {...props} />} />
+            <Route exact path="/ship-cards" render={(props) => <ShipCards {...props} />} />
           </Switch>
           </div>
           <div id="footerx">
