@@ -16,10 +16,11 @@ function App() {
   let [user, setUser] = useState(null);
   const history = useHistory();
   return (
-    <div className='App'>
+    <div id="page-container">
       
         <TheContext.Provider value={{ history, user, setUser }}>
-          <Switch>
+          <div id="content-wrap">
+          <Switch >
             <Route exact path="/" render={(props) => <LandingPage {...props} />} />
             <Route exact path="/signup" render={(props) => <SignUp />} />
             <Route exact path="/login" render={(props) => <Login {...props} />} />
@@ -27,7 +28,10 @@ function App() {
             <Route exact path="/faq" render={(props) => <FAQ {...props} />} />
             <Route exact path="/about-us" render={(props) => <AboutUs {...props} />} />
           </Switch>
+          </div>
+          <div id="footerx">
           <Footer />
+          </div>
         </TheContext.Provider>
      
     </div>
