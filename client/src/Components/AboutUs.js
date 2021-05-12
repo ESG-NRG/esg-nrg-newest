@@ -5,6 +5,7 @@ import useScreenSize from "./useScreenSize";
 import NavBar from "./NavBar"
 import globe from '../images/aboutUsGlobal.png'
 import hero from '../images/aboutUsHero.png'
+import heroz from '../images/aboutusheroz.png'
 import logo from '../images/aboutUsLogo.png'
 import par1 from '../images/AboutUsParagraph1.png'
 import par2 from '../images/AboutUsParagraph2.png'
@@ -16,7 +17,7 @@ import janek from '../images/janekpic.png'
 import steph from '../images/stephpic.png'
 import dayan from '../images/dayanpic.jpeg'
 import '../AboutUs.css'
-// import AssetsProfiles from './AssetsProfiles'
+
 
 
 function AboutUs(props) {
@@ -174,7 +175,7 @@ function AboutUs(props) {
         ) : (
             <div>
                 <div className="bg-local">
-                    <img className='heroAboutUs' src={hero} alt="hero pic" />
+                    <img className='heroAboutUs' src={heroz} alt="hero pic" />
                 </div>
                 <div className='MOPsection'>
                     <p className="marine">OUR MISSION</p> <br /><br />
