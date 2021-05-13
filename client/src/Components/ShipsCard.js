@@ -4,6 +4,8 @@ import basket from "../images/basketicon.png";
 import history from "../images/historyicon.png";
 import projects from "../images/projectsicon.png";
 import ship from "../images/shipsicon.png";
+import search from '../images/magnifyGlass.png'
+import Group70 from '../images/Group70.png'
 import NavBar from "./NavBar";
 import useScreenSize from "./useScreenSize";
 import '../shipcard.css'
@@ -22,17 +24,28 @@ function ShipsCard(props) {
           <div>
             <br />
             <br />
-            <br />
-            Mobile
+            <br /><br/>
             <div className="bg-local ">
               <img src={hero} alt="hero pic" />
-            </div>
-            <div className='outerFrameM' className='flex flex-row'>
-              <img src={ship} className='navIcons' alt="ship" />
-              <img src={projects} className='navIcons' alt="offset projects" />
-              <img src={basket} className='navIcons' alt="basket" />
-              <img src={history} className='navIcons' alt="history" />
-            </div>
+            </div><br/>
+            <div className='outerFrameM' >
+              <img src={ship} onClick='' className='navIcons' alt="ship" />
+              <img src={projects} onClick='' className='navIcons' alt="offset projects" />
+              <img src={basket} onClick='' className='navIcons' alt="basket" />
+              <img src={history} onClick='' className='navIcons' alt="history" />
+            </div><br/>
+            <div>
+              <p className='marineM'>Search Ship Name / IMO</p>
+            </div><br/>
+              <div className='flex flex-row'>
+                  <input className='shipSearchM'  placeholder='' value='  Name/IMO' />
+                  <img className='magnifyGlassM' src={search} id="search button" />
+              </div><br/><br/>
+
+              <div className='frameM'><br/>
+                <img className='group70' src={Group70} /><br/><br/><br/>
+              </div><br/><br/>
+            
           </div>
         ) : (
           <div>Desktop</div>

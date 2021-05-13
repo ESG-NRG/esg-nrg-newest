@@ -6,6 +6,7 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import globe from "../images/aboutUsGlobal.png";
 import hero from "../images/aboutUsHero.png";
+import heroz from "../images/aboutusheroz.png";
 import logo from "../images/aboutUsLogo.png";
 import par1 from "../images/AboutUsParagraph1.png";
 import par2 from "../images/AboutUsParagraph2.png";
@@ -17,7 +18,7 @@ import janek from "../images/janekpicC.png";
 import steph from "../images/stephpicC.png";
 import dayan from "../images/dayanpicC.jpg";
 import "../AboutUs.css";
-// import AssetsProfiles from './AssetsProfiles'
+
 
 function AboutUs(props) {
   const screenSize = useScreenSize();
@@ -381,7 +382,7 @@ function AboutUs(props) {
         ) : (
           <div className="aboutUsDesktopWrapperDiv">
             <div className="bg-local">
-              <img className="heroAboutUs" src={hero} alt="hero pic" />
+              <img className="heroAboutUs" src={heroz} alt="hero pic" />
             </div>
             <div className="MOPsection">
               <p className="marine">OUR MISSION</p> <br />
