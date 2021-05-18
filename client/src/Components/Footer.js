@@ -102,8 +102,7 @@ function Footer() {
           </div>
         </div>
       ) : (
-        <div className="illTryAnything"
-          style={{
+        <div style={{
             background: `linear-gradient(to bottom,  ${top} 60%,${bottom} 100%)`
           }}
         >

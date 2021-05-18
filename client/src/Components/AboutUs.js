@@ -3,7 +3,6 @@ import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import useScreenSize from "./useScreenSize";
 import NavBar from "./NavBar";
-import Footer from "./Footer";
 import globe from "../images/aboutUsGlobal.png";
 import hero from "../images/aboutUsHero.png";
 import heroz from "../images/aboutusheroz.png";
@@ -141,11 +140,11 @@ function AboutUs(props) {
               </p>
               {/* ALL PICTURES WITH TEXT */}
               <Carousel plugins={["arrows"]}>
-                <div className="outerFrameM">
+                <div className="outerFrameM carousel">
                   <img
-                    style={{ width: "100%" }}
+                    // style={{ width: "100%" }}
                     className="picsM"
-                    className="carousel"
+                    
                     src={janek}
                     alt="Janek"
                   />
@@ -179,11 +178,12 @@ function AboutUs(props) {
                   </p>
                   <br />
                 </div>
-                <div className="outerFrameM">
+                <div className="outerFrameM carousel">
                   <img
-                    style={{ width: "100%" }}
-                    className="carousel"
+                    // style={{ width: "100%" }}
+                    className="picsM"
                     src={arthur}
+                    alt="Arthur"
                   />
                   <br />
 
@@ -216,11 +216,12 @@ function AboutUs(props) {
                   </p>
                   <br />
                 </div>
-                <div className="outerFrameM">
+                <div className="outerFrameM carousel">
                   <img
-                    style={{ width: "100%" }}
-                    className="carousel"
+                    // style={{ width: "100%" }}
+                    className="picsM"
                     src={janek}
+                    alt="Jane Doe"
                   />
                   <br />
 
@@ -252,11 +253,12 @@ function AboutUs(props) {
                   </p>
                   <br />
                 </div>
-                <div className="outerFrameM">
+                <div className="outerFrameM carousel">
                   <img
-                    style={{ width: "100%" }}
-                    className="carousel"
+                    // style={{ width: "100%" }}
+                    className="picsM"
                     src={dayan}
+                    alt="Dayan"
                   />
                   <br />
 
@@ -283,11 +285,12 @@ function AboutUs(props) {
                   <br />
                 </div>
                 HELLO
-                <div className="outerFrameM">
+                <div className="outerFrameM carousel">
                   <img
-                    style={{ width: "100%" }}
-                    className="carousel"
+                    // style={{ width: "100%" }}
+                    className="picsM"
                     src={janek}
+                    Alt="Raul"
                   />
                   <br />
 
@@ -313,11 +316,12 @@ function AboutUs(props) {
                   </p>
                   <br />
                 </div>
-                <div className="outerFrameM">
+                <div className="outerFrameM carousel">
                   <img
-                    style={{ width: "100%" }}
-                    className="carousel"
+                    // style={{ width: "100%" }}
+                    className="picsM"
                     src={steph}
+                    alt="Steph"
                   />
                   <br />
 
@@ -345,11 +349,12 @@ function AboutUs(props) {
                   </p>
                   <br />
                 </div>
-                <div className="outerFrameM">
+                <div className="outerFrameM carousel">
                   <img
-                    style={{ width: "100%" }}
-                    className="carousel"
+                    // style={{ width: "100%" }}
+                    className="picsM"
                     src={greg}
+                    alt="Greg"
                   />
                   <br />
 
@@ -394,7 +399,7 @@ function AboutUs(props) {
               </p>
               <br />
               <br />
-              <img className="paragraph1" src={par1} />
+              <img className="paragraph1" src={par1} alt="paragraph icon" />
               <br />
             </div>
             <div className="MOPsection">
@@ -447,73 +452,6 @@ function AboutUs(props) {
               <img className="globalmap" src={globe} alt="global map" />
             </div>
 
-{/* <div className="assets">
-            <p className="marine">OUR ASSETS</p>
-            <br />
-            <p className="smallRaleway">People, experience and a little bit of code.</p>
-
-            <div className="oneAsset">
-                <div className="assetText">
-                    <p>Janek Ekeli - CEO</p>
-                    <p>Janek started his journey in Oslo, Norway. He studied
-                      Shipping Management at BI Norwegian Business School and
-                      holds an MSc in International Maritime Business from
-                      Southampton Solent University. He has experience working
-                      for a market-leading Norwegian shipowner and until
-                      recently, was trading bunkers (marine fuel) for a Danish
-                      oil trading house in Dubai and New York.</p>
-                      <p>Email: jekeli@esg-nrg.com</p>
-                      <p>Phone: +47 9489 1870</p>
-                      <p>Linkedin</p>
-                </div>
-
-                <div className="assetPic">
-                    <img src={janek} alt="Janek" />
-                </div>
-            </div>
-
-            
-            <div className="oneAsset">
-                <div className="assetText">
-                    <p>Janek Ekeli - CEO</p>
-                    <p>Janek started his journey in Oslo, Norway. He studied
-                      Shipping Management at BI Norwegian Business School and
-                      holds an MSc in International Maritime Business from
-                      Southampton Solent University. He has experience working
-                      for a market-leading Norwegian shipowner and until
-                      recently, was trading bunkers (marine fuel) for a Danish
-                      oil trading house in Dubai and New York.</p>
-                      <p>Email: jekeli@esg-nrg.com</p>
-                      <p>Phone: +47 9489 1870</p>
-                      <p>Linkedin</p>
-                </div>
-
-                <div className="assetPic">
-                    <img src={janek} alt="Janek" />
-                </div>
-            </div>
-
-            
-            <div className="oneAsset">
-                <div className="assetText">
-                    <p>Janek Ekeli - CEO</p>
-                    <p>Janek started his journey in Oslo, Norway. He studied
-                      Shipping Management at BI Norwegian Business School and
-                      holds an MSc in International Maritime Business from
-                      Southampton Solent University. He has experience working
-                      for a market-leading Norwegian shipowner and until
-                      recently, was trading bunkers (marine fuel) for a Danish
-                      oil trading house in Dubai and New York.</p>
-                      <p>Email: jekeli@esg-nrg.com</p>
-                      <p>Phone: +47 9489 1870</p>
-                      <p>Linkedin</p>
-                </div>
-
-                <div className="assetPic">
-                    <img src={janek} alt="Janek" />
-                </div>
-            </div>
-</div> */}
 
             <div className="MOPsection">
               <p className="marine">OUR ASSETS</p> <br />
@@ -691,7 +629,9 @@ function AboutUs(props) {
           </div>
         )}
       </>
+      
     </div>
+    
   );
 }
 

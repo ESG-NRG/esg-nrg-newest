@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@brainhubeu/react-carousel": "^2.0.3",
     "react-carousel": "^4.3.0"
   }
 }
