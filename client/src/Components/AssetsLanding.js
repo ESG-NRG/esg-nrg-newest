@@ -29,7 +29,6 @@ function AssetsLanding(props) {
               <img className='carousel' src={placeholderpic} />
               <img className='carousel' src={placeholderpic} />
             </Carousel>
-            {/* <CarouselDots value={this.state.value} onChange={this.onchange} number={this.state.slides.length} /> */}
         
         
             <br/><br/> <br/><br/> <br/><br/>
