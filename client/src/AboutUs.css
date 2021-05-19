@@ -206,3 +206,7 @@ body {
   min-height: 225px;
   margin: 20px;
 }
+
+#dayan {
+  z-index: auto;
+}

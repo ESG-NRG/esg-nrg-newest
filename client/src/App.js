@@ -35,6 +35,7 @@ function App() {
           <Footer />
           </div>
         </TheContext.Provider>
+        
      
     </div>
   );

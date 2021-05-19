@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
+import { slidesToShowPlugin } from '@brainhubeu/react-carousel';
 import useScreenSize from "./useScreenSize";
 import NavBar from "./NavBar";
 import globe from "../images/aboutUsGlobal.png";
@@ -139,7 +140,7 @@ function AboutUs(props) {
                 People, experience and a little bit of code.
               </p>
               {/* ALL PICTURES WITH TEXT */}
-              <Carousel plugins={["arrows"]}>
+              <Carousel itemWidth={230} plugins={["arrows"]}>
                 <div className="outerFrameM carousel">
                   <img
                     // style={{ width: "100%" }}
@@ -253,8 +254,8 @@ function AboutUs(props) {
                   </p>
                   <br />
                 </div>
-                <div className="outerFrameM carousel">
-                  <img
+                <div  className="outerFrameM carousel">
+                  <img id='dayan'
                     // style={{ width: "100%" }}
                     className="picsM"
                     src={dayan}
@@ -284,7 +285,6 @@ function AboutUs(props) {
                   </p>
                   <br />
                 </div>
-                HELLO
                 <div className="outerFrameM carousel">
                   <img
                     // style={{ width: "100%" }}
