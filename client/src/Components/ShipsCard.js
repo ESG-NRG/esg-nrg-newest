@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import hero from "../images/aboutUsHero.png";
+import hero from "../images/ShipCardHero.png";
 import basket from "../images/basketicon.png";
 import history from "../images/historyicon.png";
 import projects from "../images/projectsicon.png";
@@ -9,6 +9,7 @@ import Group70 from '../images/Group70.png'
 import NavBar from "./NavBar";
 import useScreenSize from "./useScreenSize";
 import '../shipcard.css'
+import FleetCard from "./FleetCard";
 
 function ShipsCard(props) {
   const screenSize = useScreenSize();
@@ -28,7 +29,7 @@ function ShipsCard(props) {
             <div className="bg-local ">
               <img src={hero} alt="hero pic" />
             </div><br/>
-            <div className='outerFrameM' >
+            <div className='outerFrameMM' >
               <img src={ship} onClick='' className='navIcons' alt="ship" />
               <img src={projects} onClick='' className='navIcons' alt="offset projects" />
               <img src={basket} onClick='' className='navIcons' alt="basket" />
@@ -45,6 +46,8 @@ function ShipsCard(props) {
               <div className='frameM'><br/>
                 <img className='group70' src={Group70} /><br/><br/><br/>
               </div><br/><br/>
+
+              <FleetCard />
             
           </div>
         ) : (
