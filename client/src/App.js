@@ -29,10 +29,12 @@ function App() {
             <Route exact path="/faq" render={(props) => <FAQ {...props} />} />
             <Route exact path="/about-us" render={(props) => <AboutUs {...props} />} />
             <Route exact path="/ship-cards" render={(props) => <ShipCards {...props} />} />
+            
           </Switch>
+          <Footer />
           </div>
           <div id="footerx">
-          <Footer />
+          {/* <Footer /> */}
           </div>
         </TheContext.Provider>
         

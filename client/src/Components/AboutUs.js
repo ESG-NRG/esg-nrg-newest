@@ -18,6 +18,7 @@ import janek from "../images/janekpicC.png";
 import steph from "../images/stephpicC.png";
 import dayan from "../images/dayanpicC.jpg";
 import "../AboutUs.css";
+import Footer from './Footer'
 
 
 function AboutUs(props) {
@@ -461,11 +462,11 @@ function AboutUs(props) {
               </p>
               
               <div>
-                <div className="outerFrame">
+                <div className="outerFrameAbout">
                   <div className="innerContent">
-                    <p>Janek Ekeli - CEO</p>
+                    <p className='teamTitle'><b>Janek Ekeli - CEO</b></p>
                     <br />
-                    <p>
+                    <p className='teamCaption'>
                       Janek started his journey in Oslo, Norway. He studied
                       Shipping Management at BI Norwegian Business School and
                       holds an MSc in International Maritime Business from
@@ -474,25 +475,34 @@ function AboutUs(props) {
                       recently, was trading bunkers (marine fuel) for a Danish
                       oil trading house in Dubai and New York.
                       <br />
-                      Email: jekeli@esg-nrg.com
+                    <br />
+                    <br /><br /><br /><br /><br /><br />
+                    <b>
+                    Email:</b> jekeli@esg-nrg.com
                       <br />
-                      Phone: +47 9489 1870
-                      <br />
+                   
+                    <b>Phone:</b> +47 9489 1870
+                    <br />
+                    <a
+                      style={{ color: "blue", textDecoration: "underline" }}
+                      href="https://www.linkedin.com/in/janek-ekeli-336953b3/"
+                    >
                       Linkedin
+                    </a>
                     </p>
                     <br />
                   </div>
                   <div className="aboutPic">
-                    <img src={janek} alt="Janek" />
+                    <img className='teamPics' src={janek} alt="Janek" />
                   </div>
                 </div>
               </div>
               <div>
-                <div className="outerFrame">
+                <div className="outerFrameAbout">
                   <div className="innerContent">
-                    <p>Arthur Pinault - CXO</p>
+                    <p className='teamTitle'><b>Arthur Pinault - CXO</b></p>
                     <br />
-                    <p>
+                    <p className='teamCaption'>
                       Arthur started his journey in the south of France. He
                       studied Criminal Justice at Miami Dade College and is a
                       User Experience/User Interface graduate of Ironhack’s
@@ -500,136 +510,197 @@ function AboutUs(props) {
                       high-tech radio guide system provider and until recently,
                       one of the world’s top-3 largest cruise lines.
                       <br />
-                      Email: apinault@esg-nrg.com
+                    <br />
+                    <br /><br /><br /><br /><br /><br />
+                    <b>
+                    Email:</b> apinault@esg-nrg.com
                       <br />
-                      Phone: 305-988-2442
+                   
+                    <b>
+                      Phone:</b> 305-988-2442
                       <br />
+                    
+                    <a
+                      style={{ color: "blue", textDecoration: "underline" }}
+                      href="https://www.linkedin.com/in/apinault/"
+                    >
                       Linkedin
-                      <br />
+                    </a>
                     </p>
                   </div>
                   <div className="aboutPic">
-                    <img src={arthur} alt="Arthur" />
+                    <img className='teamPics' src={arthur} alt="Arthur" />
                   </div>
                 </div>
               </div>
               <div>
-                <div className="outerFrame">
+                <div className="outerFrameAbout">
                   <div className="innerContent">
-                    <p>Jane Doe - CTO</p>
+                    <p className='teamTitle'><b>Jane Doe - CTO</b></p>
                     <br />
-                    <p>
+                    <p className='teamCaption'>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       A, curabitur eget feugiat tristique euismod. Donec cursus
                       volutpat sed lacinia pulvinar. Felis, justo a, elit amet
                       cras bibendum fermentum fusce. Pellentesque vel augue sit
                       tincidunt.
                       <br />
-                      Email: johndoe@esg-nrg.com
+                    <br />
+                    <br /><br /><br /><br /><br /><br />
+                    <b>
+                    Email:</b> jekeli@esg-nrg.com
                       <br />
-                      Phone: 399 999 9999
-                      <br />
+                   
+                    <b>Phone:</b> +47 9489 1870
+                    <br />
+                    <a
+                      style={{ color: "blue", textDecoration: "underline" }}
+                      href="https://www.linkedin.com/in/janek-ekeli-336953b3/"
+                    >
                       Linkedin
+                    </a>
                     </p>
                     <br />
                   </div>
                   <div className="aboutPic">
-                    <img src={janek} alt="CTO" />
+                    <img className='teamPics' src={janek} alt="CTO" />
                   </div>
                 </div>
               </div>
               <div>
-                <div className="outerFrame">
+                <div className="outerFrameAbout">
                   <div className="innerContent">
-                    <p>Dayan Evora - UX/UI Designer</p>
+                    <p className='teamTitle'><b>Dayan Evora - UX/UI Designer</b></p>
                     <br />
-                    <p>
+                    <p className='teamCaption'>
                       Dayan started his journey in Cuba. Background in Graphic
                       Design and Photography. Associates of Arts Degree from
                       Miami Dade College.
                       <br />
-                      Email: devora@esg-nrg.com
+                    <br />
+                    <br /><br /><br /><br /><br /><br />
+                    <b>
+                    Email:</b> devora@esg-nrg.com
                       <br />
+                    
+                    <a
+                      style={{ color: "blue", textDecoration: "underline" }}
+                      href="https://www.linkedin.com/in/dayanevora/"
+                    >
                       Linkedin
+                    </a>
                     </p>
                     <br />
                   </div>
                   <div className="aboutPic">
-                    <img src={dayan} alt="Dayan" />
+                    <img className='teamPics' src={dayan} alt="Dayan" />
                   </div>
                 </div>
               </div>
               <div>
-                <div className="outerFrame">
+                <div className="outerFrameAbout">
                   <div className="innerContent">
-                    <p>Raul Doejo - UX/UI Designer</p>
+                    <p className='teamTitle'><b>Raul Doejo - UX/UI Designer</b></p>
                     <br />
-                    <p>
+                    <p className='teamCaption'>
                       Raul started his journey in Venezuela. Background in IT
                       Sales, Banking, and Marketing. Bachelor's Degree in
                       Business & Marketing from San Ignacio University.
                       <br />
-                      Email: rdoejo@esg-nrg.com
+                    <br />
+                    <br /><br /><br /><br /><br /><br />
+                    <b>
+                    Email:</b> rdoejo@esg-nrg.com
                       <br />
+                    
+                    <a
+                      style={{ color: "blue", textDecoration: "underline" }}
+                      href="https://www.linkedin.com/in/rauldoejod/"
+                    >
                       Linkedin
+                    </a>
                     </p>
                     <br />
                   </div>
                   <div className="aboutPic">
-                    <img src={janek} alt="Raul" />
+                    <img className='teamPics' src={janek} alt="Raul" />
                   </div>
                 </div>
               </div>
               <div>
-                <div className="outerFrame">
+                <div className="outerFrameAbout">
                   <div className="innerContent">
-                    <p>Stephanie Mitchell - Web Developer</p>
+                    <p className='teamTitle'><b>Stephanie Mitchell - Web Developer</b></p>
                     <br />
-                    <p>
+                    <p className='teamCaption'>
                       Stephanie started her journey in... Stephanie started her
                       journey in Miami. She studied Mechanical Engineering at
                       Miami Dade College and is a Full-Stack Web Development
                       graduate of Ironhack’s Miami Bootcamp. She comes from a
                       background in retail and customer service management.
                       <br />
-                      Email: smitchell@esg-nrg.com,
+                    <br />
+                    <br /><br /><br /><br /><br /><br />
+                    <b>
+                    Email:</b> smitchell@esg-nrg.com,
                       <br />
+                  
+                    <a
+                      style={{ color: "blue", textDecoration: "underline" }}
+                      href="https://www.linkedin.com/in/stephanie--mitchell/"
+                    >
                       Linkedin
+                    </a>
                     </p>
                     <br />
                   </div>
                   <div className="aboutPic">
-                    <img src={steph} alt="Stephanie" />
+                    <img className='teamPics' src={steph} alt="Stephanie" />
                   </div>
                 </div>
               </div>
               <div>
-                <div className="outerFrame">
+                <div className="outerFrameAbout"> 
                   <div className="innerContent">
-                    <p>Greg King - Web Developer</p>
+                    <p className='teamTitle'><b>Greg King - Web Developer</b></p>
                     <br />
-                    <p>
+                    <p className='teamCaption'>
                       Greg started his journey in Central Pennsylvania. After a
                       long and successful career in commercial flooring he
                       turned a longtime hobby into a career in web development.
                       He is a Full-Stack Web Development graduate of Ironhack’s
-                      Miami bootcamp. <br />
-                      Email: gking@esg-nrg.com
+                      Miami bootcamp. 
                       <br />
+                      <br />
+                    <br /><br /><br /><br /><br /><br /><br />
+                    <b>
+                      Email:</b> gking@esg-nrg.com
+                      <br />
+                    
+                    <a
+                      style={{ color: "blue", textDecoration: "underline" }}
+                      href="https://www.linkedin.com/in/gregorykingwd/"
+                    >
                       Linkedin
+                    </a>
                     </p>
                     <br />
                   </div>
                   <div className="aboutPic">
-                    <img src={greg} alt="Greg" />
+                    <img className='teamPics' src={greg} alt="Greg" />
                   </div>
-                </div>
+                  
+                </div> 
               </div>
             </div>
+            
           </div>
+          
         )}
+        {/* <Footer /> */}
       </>
-      
+      {/* <Footer />
+      <Footer /> */}
     </div>
     
   );
