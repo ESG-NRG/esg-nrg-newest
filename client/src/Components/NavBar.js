@@ -56,7 +56,7 @@ function NavBar(props) {
                   Sign In
                 </a>
                 <a id="register" className="menu-item" href="/signup">
-                  Register
+                  Request A Demo
                 </a>
                 
         {/* <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a> */}
@@ -82,7 +82,7 @@ function NavBar(props) {
               </div>
 
               <div className="rightWideNav">
-                <Link to="/signup">Register</Link>
+                <Link to="/signup">Request A Demo</Link>
                 <Link to="/login">Sign In | </Link>
               </div>
             </nav>
