@@ -73,17 +73,20 @@ function NavBar(props) {
                 </a>
               </div>
               <div className="centerWideNav">
-                <Link to="/about-us">ABOUT US</Link>
-                <Link to="/faq">FAQS</Link>
-                <Link to="/projects">PROJECTS</Link>
-                <Link to="/our-impact">OUR IMPACT</Link>
+                <Link to="/">HOME</Link>
+                <Link to="/about-us">About Us</Link>
+                <Link to="/faq">FAQs</Link>
+                <Link to="/projects">Projects</Link>
+                <Link to="/our-impact">Our Impact</Link>
                 <Link to="/ship-cards">SHIP CARDS</Link>
-                <Link to="/contact-us">CONTACT US</Link>
+                <Link to="/contact-us">Contact Us</Link>
               </div>
-
+           <span></span>
               <div className="rightWideNav">
-                <Link to="/signup">Request A Demo</Link>
-                <Link to="/login">Sign In | </Link>
+                
+                <Link to="/login"> Sign In </Link> <br/>
+                <p>|</p>
+                <Link to="/signup">Request A Demo</Link> 
               </div>
             </nav>
           </div>

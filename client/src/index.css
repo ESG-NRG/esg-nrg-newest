@@ -225,12 +225,19 @@ Note: Beware of modifying this element as it can break the animations - you shou
   flex-direction: row;
   justify-content: space-around;
   flex-grow: 7;
+  font-family: 'Raleway';
+  font-size: 14px;
+  text-align: center;
 }
 
 .rightWideNav {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-evenly;
   flex-grow: 2;
+  font-family: 'Raleway';
+  font-size: 14px;
+  text-align: center;
 }
 
 /* .wideNavScroll {
@@ -416,7 +423,7 @@ li {
 /* ///////////////Images///////////////////// */
 .sprout {
   border-radius: 16px;
-  height: 55%;
+  height: 65%;
 }
 
 .rightship {
@@ -533,7 +540,7 @@ li {
 } */
 
 .footerLogoTop {
-  width: 50px;
+  width: 5%;
 }
 
 .footerLogo {

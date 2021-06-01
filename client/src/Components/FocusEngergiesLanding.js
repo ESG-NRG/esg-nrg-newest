@@ -4,6 +4,7 @@ import rightship from "../images/rightship.png";
 import leftship from "../images/leftship.png";
 import focus from "../images/focusParagraph.png";
 import flat from '../images/flatParagrah.png';
+import arrow from "../images/subscriptionArrow.png";
 
 
 
@@ -61,6 +62,18 @@ function FocusEngergiesLanding(props) {
               </div>
             </div>
           </div>
+          <div className="flex flex-col place-items-center">
+            
+            <p className='smallRobotoM'>
+              Join our weekly newsletter to hear the <br/>latest developments on sustainability in <br/>shipping.
+            </p><br/>
+            <div class='passwordContainer'>
+              <input className='inputPW'  placeholder='' value='Your email here' />
+              <img src={arrow} id="passwordView" />
+            </div>
+  
+            </div>
+            <br/><br/><br/>
         </div>
         ) : (
      
@@ -108,6 +121,19 @@ function FocusEngergiesLanding(props) {
               </div>
             </div>
           </div>
+          <br/><br/><br/><br/>
+          <div className="flex flex-col place-items-center">
+            
+            <p className='mdRoboto'>
+              Join our weekly newsletter to hear the latest developments <br/> on sustainability in shipping.
+            </p><br/>
+            <div class='passwordContainer'>
+              <input className='inputPW'  placeholder='' value='Your email here' />
+              <img src={arrow} id="passwordView" />
+            </div>
+  
+            </div>
+            <br/><br/><br/>
         </div>
         )}
       </>

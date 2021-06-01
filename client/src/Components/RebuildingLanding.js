@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import useScreenSize from "./useScreenSize";
-import babysprout from "../images/babysprout.png";
+import sprout from "../images/sprout.png";
 import paragraph from "../images/sproutsFriend.png";
 
 function RebuildingLanding(props) {
@@ -11,7 +11,7 @@ function RebuildingLanding(props) {
         {screenSize === "xs" || screenSize === "sm" ? (
         <div>
         <div>
-            <img className="sproutM" src={babysprout} alt="baby tree sprout" />
+            <img className="sproutM" src={sprout} alt="baby tree sprout" />
             </div>
         <div className="flex flex-row my-10">
             <div className='MOPsectionM'>
@@ -27,7 +27,7 @@ function RebuildingLanding(props) {
                 <br /><br />
             
               <button className="buttonM" onClick>
-                DISCOVER NOW
+               EXPLORE PROJECTS
               </button>
             </div>
           </div>
@@ -35,14 +35,13 @@ function RebuildingLanding(props) {
         </div>
     ) : ( 
       <div className='MOPsection'>
-        <div className="flex flex-row">
-            <div>
-            
-                <p className="marine">REBUILD THE OCEAN + <br />ENVIRONMENT</p> <br />
+      <p className="marine">REBUILD THE OCEAN + ENVIRONMENT</p> <br />
                 <p className="smallRaleway">
                   with open, pragmatic guidance from your ESG Adviser
                 </p>
-                <br /><br />
+                <br /><br /><br />
+        <div className="flex flex-row">
+            <div>
                 <div>
                   <img className='paragraph' src={paragraph} />
                 </div> 
@@ -53,7 +52,7 @@ function RebuildingLanding(props) {
               </button>
             </div>
             <div>
-              <img className="sprout" src={babysprout} alt="baby tree sprout" />
+              <img className="sprout" src={sprout} alt="baby tree sprout" />
             </div>
           </div>
         </div>

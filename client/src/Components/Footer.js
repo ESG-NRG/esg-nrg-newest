@@ -38,15 +38,19 @@ function Footer() {
               </li>
               <br />
               <li className="smallRoboto">
+                <a href="/">Home</a>
+              </li>
+              <br />
+              <li className="smallRoboto">
                 <a href="/about-us">About</a>
               </li>
               <br />
               <li className="smallRoboto">
-                <a href="/faq">FAQ</a>
+                <a href="/projects">Projects</a>
               </li>
               <br />
               <li className="smallRoboto">
-                <a href="/projects">Projects</a>
+                <a href="/faq">FAQ</a>
               </li>
               <br />
               <li className="smallRoboto">
@@ -106,8 +110,19 @@ function Footer() {
             background: `linear-gradient(to bottom,  ${top} 60%,${bottom} 100%)`
           }}
         >
-          <div className="footer">
+         <a style={{display:'flex', justifyContent:'center' }} href="/">
+                  <img
+                    style={{ margin: "5%" }}
+                    className="footerLogoTop"
+                    src={footerLogo}
+                    alt="esg-nrg logo"
+                  />
+                </a>
+          <div className="footer">   
             <ul className="flex flex-row" style={{ listStyleType: "none" }}>
+            <li className="smallRoboto">
+                <a href="/">Home</a>
+              </li>
               <li className="smallRoboto">
                 <a href="/about-us">About</a>
               </li>
@@ -117,16 +132,7 @@ function Footer() {
               <li className="smallRoboto">
                 <a href="/projects">Projects</a>
               </li>
-              <li>
-                <a href="/">
-                  <img
-                    style={{ margin: "5%" }}
-                    className="footerLogoTop"
-                    src={footerLogo}
-                    alt="esg-nrg logo"
-                  />
-                </a>
-              </li>
+              
               <li className="smallRoboto">
                 <a href="/our-impact">Our Impact</a>
               </li>

@@ -1,6 +1,6 @@
 import React from "react";
 import HeroLanding from './HeroLanding'
-import AssetsLanding from "./AssetsLanding";
+
 import FocusEngergiesLanding from "./FocusEngergiesLanding";
 import MarineOffsetLanding from "./MarineOffsetLanding";
 import RebuildingLanding from "./RebuildingLanding";
@@ -19,7 +19,7 @@ function LandingPage() {
           <MarineOffsetLanding />
           <RebuildingLanding />
           <FocusEngergiesLanding />
-          <AssetsLanding />
+   
         </div>
 
         
