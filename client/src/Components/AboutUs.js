@@ -9,9 +9,14 @@ import hero from "../images/aboutUsHero.png";
 import heroz from "../images/aboutusheroz.png";
 import logo from "../images/aboutUsLogo.png";
 import par1 from "../images/AboutUsParagraph1.png";
-import par2 from "../images/AboutUsParagraph2.png";
+import p2top from '../images/P2Top.png';
+import p2mid from '../images/P2Mid.png';
+import p2bottom from '../images/P2Bottom.png';
 import par3 from "../images/AboutUsParagraph3.png";
-import par4 from "../images/AboutUsParagraph4.png";
+import par4 from '../images/AboutUsParagraph4.png';
+import p4Top from '../images/P4Top.png';
+import p4Mid from '../images/P4Mid.png';
+import p4Bottom from '../images/P4Bottom.png';
 import arthur from "../images/arthurpicC.jpg";
 import greg from "../images/gregpicC.jpg";
 import janek from "../images/janekpicC.png";
@@ -80,8 +85,10 @@ function AboutUs(props) {
                 development for less-advantaged communities. It doesn’t seem
                 wrong that the emissions that are emitted globally are
                 compensated for in some of the communities worst affected by
-                climate change. All actions transfer a form of energy. Can you
-                afford not to harness ESG-NRG?
+                climate change. 
+                <br/><br/><br/>
+                <b>All actions transfer a form of energy. Can you
+                afford not to harness ESG-NRG?</b>
               </p>
             </div>
             <br />
@@ -103,7 +110,7 @@ function AboutUs(props) {
                 could make a positive impact exponentially greater than by going
                 at it alone. <br />
                 <br />
-                Together we created the Marine Offset Platform (MOP). <br />
+                <b>Together we created the Marine Offset Platform (MOP).</b> <br />
                 <br />
                 The MOP is dedicated to the shipping community and it’s clients.
                 We strive to make the purchasing and retiring of carbon offset
@@ -126,9 +133,9 @@ function AboutUs(props) {
               </p>
               <br />
               <p className="smallBlueM">
-                We like working together. Drop us a message if you would like to
-                meet and tal-k sustainability and shipping - physically or
-                remotely.
+                <b>We like working together. Drop us a message if you would like to
+                meet and talk sustainability and shipping - physically or
+                remotely.</b>
               </p>
             </div>
             <div>
@@ -412,23 +419,23 @@ function AboutUs(props) {
               <br />
               <br />
               <div className="flex flex-row">
-                <div>
-                  <br />
+                <div >
+                
                   <div>
-                    <img className="paragraph2" src={par2} />
-                  </div>
+                  <img className="paragraph2" src={p2top} /> <br /><br /><br />
+                  <img className="paragraph2" src={p2mid} /> <br />
                   <br />
-                  <br />
+                  <img className="paragraph2" src={p2bottom} /><br />
+                  </div>                  
                 </div>
                 <div>
-                  <br />
-                  <br />
-                  <br />
+    
                   <img src={logo} className="midLogo" alt="esg-nrg logo" />
+                 
                 </div>
               </div>
             </div>
-            <br />
+      
 
             <div className="MOPsection">
               <p className="marine">OUR STORY</p> <br />
@@ -438,7 +445,9 @@ function AboutUs(props) {
               </p>
               <br />
               <br />
-              <img className="paragraph3" src={par3} />
+              <img className='paragraph3' src={p4Top} /><br />
+              <img className='paragraph3-2' src={p4Mid} /><br />
+              <img className='paragraph3' src={p4Bottom} />
             </div>
 
             <div className="MOPsection">
@@ -460,7 +469,7 @@ function AboutUs(props) {
               <p className="smallRaleway">
                 People, experience and a little bit of code.
               </p>
-              
+              <br/>
               <div>
                 <div className="outerFrameAbout">
                   <div className="innerContent">
