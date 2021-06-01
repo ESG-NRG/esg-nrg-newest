@@ -165,11 +165,12 @@ li {
 }
 
 .smallRobotoM {
-  font-family: "Roboto";
+  font-family: "Raleway";
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
   line-height: 21.09px;
+  color: #5B65D7
   /* text-align: center; */
 }
 

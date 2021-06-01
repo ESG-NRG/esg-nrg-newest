@@ -64,7 +64,7 @@ function FocusEngergiesLanding(props) {
           </div>
           <div className="flex flex-col place-items-center">
             
-            <p className='smallRobotoM'>
+            <p className='smallRobotoM2'>
               Join our weekly newsletter to hear the <br/>latest developments on sustainability in <br/>shipping.
             </p><br/>
             <div class='passwordContainer'>
