@@ -24,7 +24,7 @@ function FleetCard(props) {
                     <p className='headerSub'>9702455</p>
                 </div>
             </div>
-            <br/>
+            {/* <br/> */}
             <div className='parent'>
                 <img className='image1' src={excalibur} alt='Vessel' />
                 <img className='image2' src={filter} alt='Filter Option' />
