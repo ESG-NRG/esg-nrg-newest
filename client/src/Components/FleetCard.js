@@ -4,18 +4,14 @@ import '../FleetCard.css'
 import excalibur from '../images/VesselPlaceholder.png'
 import filter from '../images/VesselFilter.png'
 import remove from '../images/RemoveIcon.png'
-import verticalLine from '../images/VerticalLine.png';
+import verticalLine from '../images/verticalLine.png';
 import add from '../images/AddPort.png';
+import search from '../images/magnifyGlass.png'
 import { flex } from 'tailwindcss/defaultTheme';
 
 function FleetCard(props) {
     const screenSize = useScreenSize();
   const [isOpen, setOpen] = useState(false);
-
-
-//   function fleetCard() {
-
-//   }
 
     return (
         <>
@@ -156,12 +152,20 @@ function FleetCard(props) {
 
                 </div>
             </div>
-            <button className="button" onClick>
+            <button style={{alignItems:'center'}} className="button" onClick>
                 CALCULATE VOYAGE 
               </button>
         </div>
-        ) : (
-            <div>
+        ) : ( 
+            <div id='outterFrameD2'> <br/><br/>
+          
+            <div className='searchBar'>
+                    <p className='marineM'>Search Ship Name / IMO</p>
+                  <input className='shipSearchD'  placeholder='' value='  Name/IMO' />
+                  <img className='magnifyGlassD' src={search} id="search button" />
+              </div>
+
+              <br/><br/>
             <div style={{display:'flex', justifyContent:'space-between', margin:'auto'}} className='flex flex-row'>
                 <div>
                     <p className='marineM2'>EXCALIBUR</p> 
@@ -174,13 +178,13 @@ function FleetCard(props) {
                 </div>
             </div>
             {/* <br/> */}
-            <div className='parent'>
-                <img className='image1' src={excalibur} alt='Vessel' />
-                <img className='image2' src={filter} alt='Filter Option' />
+            <div className='parentD2'>
+                <img className='image1D2' src={excalibur} alt='Vessel' />
+                <img className='image2D2' src={filter} alt='Filter Option' />
             </div>
             <br/>
             <div>
-                <img className='removeIcon' src={remove} alt='Remove Option' />
+                <img className='removeIconD' src={remove} alt='Remove Option' />
             </div>
             
             <br/>

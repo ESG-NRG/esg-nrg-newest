@@ -15,6 +15,10 @@ import FleetCard from "./FleetCard";
 function ShipsCard(props) {
   const screenSize = useScreenSize();
   const [isOpen, setOpen] = useState(false);
+  
+  function clickHandler() {
+    console.log('Button Clicked')
+  }
 
   return (
     <div>
@@ -56,7 +60,7 @@ function ShipsCard(props) {
             <div id='parentD' >
               <img id='image1D' className='heroDesk' src={map} alt='World Map' />
             <div id='image2D' className='outerFrameD' ><br/><br/><br/>
-              <img src={ship} onClick='fleetCard' className='navIconsD' alt="ship" /><br/><br/>
+              <img src={ship} onClick={clickHandler} className='navIconsD' alt="ship" /><br/><br/>
               <img src={projects} onClick='' className='navIconsD' alt="offset projects" /><br/><br/>
               <img src={basket} onClick='' className='navIconsD' alt="basket" /><br/><br/>
               <img src={history} onClick='' className='navIconsD' alt="history" /><br/>
