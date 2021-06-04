@@ -6,6 +6,7 @@ import Facebook from "../images/Facebook.png";
 import Twitter from "../images/Twitter.png";
 import LinkedIn from "../images/Linkedin.png";
 
+
 function Footer() {
   //gradient
   const top = "#464646";

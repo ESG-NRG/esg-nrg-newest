@@ -5,8 +5,7 @@
 /* //////////Mobile///////////////// */
 .navIcons {
   height: 55px;
-  /* display: flex;
-    justify-content: space-evenly; */
+ 
 }
 
 .outerFrameMM {
@@ -104,4 +103,86 @@
 .removeIcon {
   width: 30%;
   margin-left: auto;
+}
+
+#addIcon {
+  width: 35%;
+}
+
+.statistics {
+  display: flex;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24.06px;
+  color: #43aa87;
+  margin: auto;
+}
+
+.inputOption {
+  border-color: #5B65D7;
+  width: 90%;
+  margin: 5%;
+}
+
+.verticalLine {
+  height: 10%;
+}
+
+.button {
+  border: 2px solid #d64933;
+  background-color: #d64933;
+  color: white;
+  border-radius: 5px;
+  width: 180px;
+  height: 40px;
+  line-height: 17.61px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+/* /////////////Desktop//////////////////// */
+/* .heroDesk {
+  width: 80%;
+} */
+
+.outerFrameD {
+  background: #ffffff;
+  border: 3px solid white;
+  box-shadow: 0px 4px 4px #cbc9c9;
+  border-radius: 8px;
+  width: 5%;
+}
+
+.navIconsD {
+  height: 65px;
+  margin: auto;
+}
+
+#parentD {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: auto;
+}
+
+#image1D {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95%;
+}
+
+#image2D {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

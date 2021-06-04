@@ -4,6 +4,7 @@ import basket from "../images/basketicon.png";
 import history from "../images/historyicon.png";
 import projects from "../images/projectsicon.png";
 import ship from "../images/shipsicon.png";
+import map from '../images/vesselMap.png';
 import search from '../images/magnifyGlass.png'
 import Group70 from '../images/Group70.png'
 import NavBar from "./NavBar";
@@ -51,7 +52,20 @@ function ShipsCard(props) {
             
           </div>
         ) : (
-          <div>Desktop</div>
+          <div>
+            <div id='parentD' >
+              <img id='image1D' className='heroDesk' src={map} alt='World Map' />
+            <div id='image2D' className='outerFrameD' ><br/><br/>
+              <img src={ship} onClick='' className='navIconsD' alt="ship" /><br/><br/>
+              <img src={projects} onClick='' className='navIconsD' alt="offset projects" /><br/><br/>
+              <img src={basket} onClick='' className='navIconsD' alt="basket" /><br/><br/>
+              <img src={history} onClick='' className='navIconsD' alt="history" /><br/>
+              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            </div>
+            </div>
+            
+
+          </div>
         )}
       </>
     </div>
