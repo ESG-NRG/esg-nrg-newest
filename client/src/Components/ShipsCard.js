@@ -64,7 +64,7 @@ function ShipsCard(props) {
               <img src={projects} onClick='' className='navIconsD' alt="offset projects" /><br/><br/>
               <img src={basket} onClick='' className='navIconsD' alt="basket" /><br/><br/>
               <img src={history} onClick='' className='navIconsD' alt="history" /><br/>
-              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             </div>
             </div>
             <FleetCard />

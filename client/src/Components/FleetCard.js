@@ -217,12 +217,12 @@ function FleetCard(props) {
                 </p>
                 <p className='statistics'> 
                     Origin Port: 
-                    <p style={{color: '#FA6521'}}>*</p> <br/>
+                    <p style={{color: '#FA6521'}}>*</p>
                      
-                </p>
+                </p><br/>
                 <div>
                     <input className='inputOption' type='input' search='New York' /> <br/>
-                <img id='addIcon' src={add} alt='Add Port Option' />
+                <img id='addIconD' src={add} alt='Add Port Option' />
                 </div>
 
                 <br/>
