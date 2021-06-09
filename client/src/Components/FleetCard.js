@@ -4,7 +4,7 @@ import '../FleetCard.css'
 import excalibur from '../images/VesselPlaceholder.png'
 import filter from '../images/VesselFilter.png'
 import remove from '../images/RemoveIcon.png'
-import verticalLine from '../images/verticalLine.png';
+import VerticalLine from '../images/VerticalLine.png';
 import add from '../images/AddPort.png';
 import search from '../images/magnifyGlass.png'
 import { flex } from 'tailwindcss/defaultTheme';
@@ -93,7 +93,7 @@ function FleetCard(props) {
                     </div>
                 </div>
 
-                <img className='verticalLine' src={verticalLine} />
+                <img className='verticalLine' src={VerticalLine} />
 
                 {/* RIGHT SIDE  */}
                 <div>
@@ -242,7 +242,7 @@ function FleetCard(props) {
                     </div>
                 </div>
 
-                <img className='verticalLine' src={verticalLine} />
+                <img className='verticalLine' src={VerticalLine} />
 
                 {/* RIGHT SIDE  */}
                 <div>
